@@ -1,0 +1,2843 @@
+{
+  "summary": {
+    "slug": "nasti",
+    "id": "char_4212_nasti",
+    "name": "Nasti",
+    "desc": "莱茵生命合作干员娜斯提，不苟言笑的工程师。",
+    "icon": "https://static.closure.wiki/v2/thumb/charavatars/char_4212_nasti.webp",
+    "type": "operator",
+    "isUnreleased": true
+  },
+  "character": {
+    "name": "娜斯提",
+    "description": "能够阻挡两个敌人，使用<支援装置>协助作战",
+    "sortIndex": 595,
+    "spTargetType": "NONE",
+    "canUseGeneralPotentialItem": true,
+    "canUseActivityPotentialItem": false,
+    "potentialItemId": "p_char_4212_nasti",
+    "nationId": "columbia",
+    "groupId": "rhine",
+    "mainPower": {
+      "nationId": "columbia",
+      "groupId": "rhine"
+    },
+    "displayNumber": "RL11",
+    "appellation": "Nasti",
+    "position": "MELEE",
+    "tagList": [
+      "支援",
+      "防护"
+    ],
+    "itemUsage": "莱茵生命合作干员娜斯提，不苟言笑的工程师。",
+    "itemDesc": "她来自女妖河谷，也走过拓荒地，而她的未来高悬于天际。",
+    "itemObtainApproach": "招募寻访",
+    "isNotObtainable": false,
+    "isSpChar": false,
+    "maxPotentialLevel": 5,
+    "rarity": "TIER_6",
+    "profession": "SUPPORT",
+    "subProfessionId": "craftsman",
+    "phases": [
+      {
+        "characterPrefabKey": "char_4212_nasti",
+        "rangeId": "1-1",
+        "maxLevel": 50,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 989,
+              "atk": 243,
+              "def": 202,
+              "magicResistance": 0,
+              "cost": 15,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1.5,
+              "respawnTime": 70,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false,
+              "fearedImmune": false,
+              "palsyImmune": false,
+              "attractImmune": false
+            }
+          },
+          {
+            "level": 50,
+            "data": {
+              "maxHp": 1414,
+              "atk": 381,
+              "def": 291,
+              "magicResistance": 0,
+              "cost": 15,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1.5,
+              "respawnTime": 70,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false,
+              "fearedImmune": false,
+              "palsyImmune": false,
+              "attractImmune": false
+            }
+          }
+        ]
+      },
+      {
+        "characterPrefabKey": "char_4212_nasti",
+        "rangeId": "1-1",
+        "maxLevel": 80,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 1414,
+              "atk": 381,
+              "def": 291,
+              "magicResistance": 0,
+              "cost": 17,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1.5,
+              "respawnTime": 70,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false,
+              "fearedImmune": false,
+              "palsyImmune": false,
+              "attractImmune": false
+            }
+          },
+          {
+            "level": 80,
+            "data": {
+              "maxHp": 1938,
+              "atk": 509,
+              "def": 375,
+              "magicResistance": 0,
+              "cost": 17,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1.5,
+              "respawnTime": 70,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false,
+              "fearedImmune": false,
+              "palsyImmune": false,
+              "attractImmune": false
+            }
+          }
+        ],
+        "evolveCost": [
+          {
+            "id": "3271",
+            "count": 5,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30052",
+            "count": 7,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30022",
+            "count": 4,
+            "type": "MATERIAL"
+          }
+        ]
+      },
+      {
+        "characterPrefabKey": "char_4212_nasti",
+        "rangeId": "1-1",
+        "maxLevel": 90,
+        "attributesKeyFrames": [
+          {
+            "level": 1,
+            "data": {
+              "maxHp": 1938,
+              "atk": 509,
+              "def": 375,
+              "magicResistance": 0,
+              "cost": 19,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1.5,
+              "respawnTime": 70,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false,
+              "fearedImmune": false,
+              "palsyImmune": false,
+              "attractImmune": false
+            }
+          },
+          {
+            "level": 90,
+            "data": {
+              "maxHp": 2585,
+              "atk": 614,
+              "def": 446,
+              "magicResistance": 0,
+              "cost": 19,
+              "blockCnt": 2,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "baseAttackTime": 1.5,
+              "respawnTime": 70,
+              "hpRecoveryPerSec": 0,
+              "spRecoveryPerSec": 1,
+              "maxDeployCount": 1,
+              "maxDeckStackCnt": 0,
+              "tauntLevel": 0,
+              "massLevel": 0,
+              "baseForceLevel": 0,
+              "stunImmune": false,
+              "silenceImmune": false,
+              "sleepImmune": false,
+              "frozenImmune": false,
+              "levitateImmune": false,
+              "disarmedCombatImmune": false,
+              "fearedImmune": false,
+              "palsyImmune": false,
+              "attractImmune": false
+            }
+          }
+        ],
+        "evolveCost": [
+          {
+            "id": "3273",
+            "count": 4,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30135",
+            "count": 4,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "31084",
+            "count": 5,
+            "type": "MATERIAL"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "skchr_nasti_1",
+        "overrideTokenKey": "token_10059_nasti_nstdef",
+        "levelUpCostCond": [
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 28800,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 8,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31044",
+                "count": 4,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31063",
+                "count": 5,
+                "type": "MATERIAL"
+              }
+            ]
+          },
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 57600,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 12,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31054",
+                "count": 4,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30014",
+                "count": 10,
+                "type": "MATERIAL"
+              }
+            ]
+          },
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 86400,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 15,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30145",
+                "count": 6,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31034",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ]
+          }
+        ],
+        "unlockCond": {
+          "phase": "PHASE_0",
+          "level": 1
+        }
+      },
+      {
+        "skillId": "skchr_nasti_2",
+        "overrideTokenKey": "token_10060_nasti_nstchr",
+        "levelUpCostCond": [
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 28800,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 8,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31074",
+                "count": 4,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30103",
+                "count": 4,
+                "type": "MATERIAL"
+              }
+            ]
+          },
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 57600,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 12,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31014",
+                "count": 4,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31024",
+                "count": 9,
+                "type": "MATERIAL"
+              }
+            ]
+          },
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 86400,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 15,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30165",
+                "count": 6,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31064",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ]
+          }
+        ],
+        "unlockCond": {
+          "phase": "PHASE_1",
+          "level": 1
+        }
+      },
+      {
+        "skillId": "skchr_nasti_3",
+        "overrideTokenKey": "token_10061_nasti_nstbld",
+        "levelUpCostCond": [
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 28800,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 8,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31094",
+                "count": 4,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "31043",
+                "count": 6,
+                "type": "MATERIAL"
+              }
+            ]
+          },
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 57600,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 12,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30014",
+                "count": 4,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30054",
+                "count": 8,
+                "type": "MATERIAL"
+              }
+            ]
+          },
+          {
+            "unlockCond": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "lvlUpTime": 86400,
+            "levelUpCost": [
+              {
+                "id": "3303",
+                "count": 15,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30115",
+                "count": 6,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "30044",
+                "count": 5,
+                "type": "MATERIAL"
+              }
+            ]
+          }
+        ],
+        "unlockCond": {
+          "phase": "PHASE_2",
+          "level": 1
+        }
+      }
+    ],
+    "displayTokenDict": {
+      "token_10059_nasti_nstdef": true,
+      "token_10060_nasti_nstchr": true,
+      "token_10061_nasti_nstbld": true
+    },
+    "talents": [
+      {
+        "candidates": [
+          {
+            "unlockCondition": {
+              "phase": "PHASE_0",
+              "level": 1
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "前方施工",
+            "description": "可以携带2个<支援装置>(最多可部署1个)，效果根据技能改变而改变",
+            "blackboard": {
+              "cnt": 2
+            },
+            "isHideTalent": false
+          },
+          {
+            "unlockCondition": {
+              "phase": "PHASE_1",
+              "level": 1
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "前方施工",
+            "description": "可以携带2个<支援装置>(最多可部署2个)，效果根据技能改变而改变",
+            "blackboard": {
+              "cnt": 3
+            },
+            "isHideTalent": false
+          },
+          {
+            "unlockCondition": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "前方施工",
+            "description": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变",
+            "blackboard": {
+              "cnt": 3
+            },
+            "isHideTalent": false
+          }
+        ]
+      },
+      {
+        "candidates": [
+          {
+            "unlockCondition": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "注意安全",
+            "description": "获得10%<$ba.protect>庇护</>；远程敌人出现后，改为使自身和场上的高台干员获得15%<$ba.protect>庇护</>，且每6秒获得1点技力",
+            "blackboard": {
+              "nasti_t2[add_sp].interval": 6,
+              "nasti_t2[res_plus].damage_resistance": 0.15,
+              "nasti_t2[res].damage_resistance": 0.1
+            },
+            "isHideTalent": false
+          },
+          {
+            "unlockCondition": {
+              "phase": "PHASE_2",
+              "level": 1
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "注意安全",
+            "description": "获得12%<@ba.talpu>（+2%）</><$ba.protect>庇护</>；远程敌人出现后，改为使自身和场上的高台干员获得18%<@ba.talpu>（+3%）</><$ba.protect>庇护</>，且每6秒获得1点技力",
+            "blackboard": {
+              "nasti_t2[add_sp].interval": 6,
+              "nasti_t2[res_plus].damage_resistance": 0.18,
+              "nasti_t2[res].damage_resistance": 0.12
+            },
+            "isHideTalent": false
+          }
+        ]
+      }
+    ],
+    "potentialRanks": [
+      {
+        "type": "BUFF",
+        "description": "部署费用-1",
+        "buff": {
+          "attributes": {
+            "attributeModifiers": [
+              {
+                "attributeType": "COST",
+                "formulaItem": "ADDITION",
+                "value": -1,
+                "loadFromBlackboard": false,
+                "fetchBaseValueFromSourceEntity": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "BUFF",
+        "description": "再部署时间-6秒",
+        "buff": {
+          "attributes": {
+            "attributeModifiers": [
+              {
+                "attributeType": "RESPAWN_TIME",
+                "formulaItem": "ADDITION",
+                "value": -6,
+                "loadFromBlackboard": false,
+                "fetchBaseValueFromSourceEntity": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "BUFF",
+        "description": "攻击力+25",
+        "buff": {
+          "attributes": {
+            "attributeModifiers": [
+              {
+                "attributeType": "ATK",
+                "formulaItem": "ADDITION",
+                "value": 25,
+                "loadFromBlackboard": false,
+                "fetchBaseValueFromSourceEntity": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "CUSTOM",
+        "description": "第二天赋效果增强"
+      },
+      {
+        "type": "BUFF",
+        "description": "部署费用-1",
+        "buff": {
+          "attributes": {
+            "attributeModifiers": [
+              {
+                "attributeType": "COST",
+                "formulaItem": "ADDITION",
+                "value": -1,
+                "loadFromBlackboard": false,
+                "fetchBaseValueFromSourceEntity": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "favorKeyFrames": [
+      {
+        "level": 0,
+        "data": {
+          "maxHp": 0,
+          "atk": 0,
+          "def": 0,
+          "magicResistance": 0,
+          "cost": 0,
+          "blockCnt": 0,
+          "moveSpeed": 0,
+          "attackSpeed": 0,
+          "baseAttackTime": 0,
+          "respawnTime": 0,
+          "hpRecoveryPerSec": 0,
+          "spRecoveryPerSec": 0,
+          "maxDeployCount": 0,
+          "maxDeckStackCnt": 0,
+          "tauntLevel": 0,
+          "massLevel": 0,
+          "baseForceLevel": 0,
+          "stunImmune": false,
+          "silenceImmune": false,
+          "sleepImmune": false,
+          "frozenImmune": false,
+          "levitateImmune": false,
+          "disarmedCombatImmune": false,
+          "fearedImmune": false,
+          "palsyImmune": false,
+          "attractImmune": false
+        }
+      },
+      {
+        "level": 50,
+        "data": {
+          "maxHp": 280,
+          "atk": 0,
+          "def": 30,
+          "magicResistance": 0,
+          "cost": 0,
+          "blockCnt": 0,
+          "moveSpeed": 0,
+          "attackSpeed": 0,
+          "baseAttackTime": 0,
+          "respawnTime": 0,
+          "hpRecoveryPerSec": 0,
+          "spRecoveryPerSec": 0,
+          "maxDeployCount": 0,
+          "maxDeckStackCnt": 0,
+          "tauntLevel": 0,
+          "massLevel": 0,
+          "baseForceLevel": 0,
+          "stunImmune": false,
+          "silenceImmune": false,
+          "sleepImmune": false,
+          "frozenImmune": false,
+          "levitateImmune": false,
+          "disarmedCombatImmune": false,
+          "fearedImmune": false,
+          "palsyImmune": false,
+          "attractImmune": false
+        }
+      }
+    ],
+    "allSkillLvlup": [
+      {
+        "unlockCond": {
+          "phase": "PHASE_0",
+          "level": 1
+        },
+        "lvlUpCost": [
+          {
+            "id": "3301",
+            "count": 5,
+            "type": "MATERIAL"
+          }
+        ]
+      },
+      {
+        "unlockCond": {
+          "phase": "PHASE_0",
+          "level": 1
+        },
+        "lvlUpCost": [
+          {
+            "id": "3301",
+            "count": 5,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30011",
+            "count": 6,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30061",
+            "count": 4,
+            "type": "MATERIAL"
+          }
+        ]
+      },
+      {
+        "unlockCond": {
+          "phase": "PHASE_0",
+          "level": 1
+        },
+        "lvlUpCost": [
+          {
+            "id": "3302",
+            "count": 8,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30022",
+            "count": 5,
+            "type": "MATERIAL"
+          }
+        ]
+      },
+      {
+        "unlockCond": {
+          "phase": "PHASE_1",
+          "level": 1
+        },
+        "lvlUpCost": [
+          {
+            "id": "3302",
+            "count": 8,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30032",
+            "count": 4,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30042",
+            "count": 4,
+            "type": "MATERIAL"
+          }
+        ]
+      },
+      {
+        "unlockCond": {
+          "phase": "PHASE_1",
+          "level": 1
+        },
+        "lvlUpCost": [
+          {
+            "id": "3302",
+            "count": 8,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30103",
+            "count": 4,
+            "type": "MATERIAL"
+          }
+        ]
+      },
+      {
+        "unlockCond": {
+          "phase": "PHASE_1",
+          "level": 1
+        },
+        "lvlUpCost": [
+          {
+            "id": "3303",
+            "count": 8,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "31043",
+            "count": 5,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30083",
+            "count": 3,
+            "type": "MATERIAL"
+          }
+        ]
+      }
+    ]
+  },
+  "handbookInfo": {
+    "charID": "char_4212_nasti",
+    "infoName": "Unknown",
+    "isLimited": false,
+    "storyTextAudio": [
+      {
+        "stories": [
+          {
+            "storyText": "【代号】娜斯提\n【性别】女\n【战斗经验】十五年\n【出身地】卡兹戴尔\n【生日】4月9日\n【种族】萨卡兹\n【身高】171cm\n【矿石病感染情况】\n参照医学检测报告，确认为非感染者。",
+            "unLockType": "DIRECT",
+            "unLockParam": "",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "基础档案",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "【物理强度】优良\n【战场机动】优良\n【生理耐受】标准\n【战术规划】标准\n【战斗技巧】卓越\n【源石技艺适应性】标准",
+            "unLockType": "DIRECT",
+            "unLockParam": "",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "综合体检测试",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "娜斯提·鲁诺瑞伊，莱茵生命工程科主任，哥伦比亚工程科学领域的专家，在应用语言学方面也有一定造诣。经塞雷娅介绍，现与罗德岛签订长期合作条款，作为工程部特聘顾问，为罗德岛多个项目提供支持。",
+            "unLockType": "DIRECT",
+            "unLockParam": "",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "客观履历",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "造影检测结果显示，该干员体内脏器轮廓清晰，未见异常阴影，循环系统内源石颗粒检测未见异常，无矿石病感染迹象，现阶段可确认为非矿石病感染者。\n\n【体细胞与源石融合率】0%\n干员娜斯提没有被源石感染的迹象。\n\n【血液源石结晶密度】0.13u/L\n干员娜斯提童年在卡兹戴尔有过五年生活经历，之后又在泰拉各地辗转游历十余年，在工作中长期频繁接触各类源石制品。她至今仍未感染，无疑是好运与极端严密的防护措施共同作用的结果。\n\n“我要实现的目标需要我有健康的身体，仅此而已。”\n——娜斯提\n\n“但是手上的茧太厚啦！”\n——某位偶然经过医疗部的精灵",
+            "unLockType": "FAVOR",
+            "unLockParam": "25",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "临床诊断分析",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "在塞雷娅的帮助下，罗德岛与娜斯提建立了联系，对方也很快接受了我们发出的“特别工程顾问”邀约。随即，特里蒙办事处的干员带着合同拜访了莱茵生命。\n据那位人事干员回忆，莱茵生命并没有为这场重要的签约安排一个专门的仪式，甚至一间专门的办公室。一个名叫斯凯的丰蹄研究员带着他直达某处地下设施，指着一扇门，扔下一句“主任就在里面”便很臭屁地离开了。人事干员满怀疑惑地推开门，随即愣在当场动弹不得：上百只头戴黄色安全帽的巨型蚂蚁，在空间里张牙舞爪、横冲直撞，更是在发现他的瞬间向他涌来！合同掉落在地，被蚂蚁们踩得七零八落。娜斯提拨开蚁群，冷着脸走到他面前，抛出一句：“抱歉，工程检修中没法脱身，只能安排在这里。”\n人事干员确认自己听清了对方的话，这才从“莱茵生命为何突然对罗德岛发难”的恐怖猜想中回过神来，也才注意到那些所谓的“巨型蚂蚁”，其实和娜斯提腰间的装置同源，是树枝造型的机器人。它们正在咒言的驱动下，检修整个空间的能源供应系统。戴着安全帽是为了防止核心元件磕碰，可活动的枝节足以完成多样化的精密作业，看得出来它们是这位工程科主任的杰作。\n准备的合同已经损毁，人事干员只好向娜斯提道歉，提议改天再另行签约，然后这位始终没什么表情的主任再一次震惊了他——娜斯提从身侧飘浮的纸带中截出一节，让他重复合同的大致内容，文字随着话音起落在纸带上浮现，随后一个机器人踩了踩他的脚，递过来一支笔，示意他签字落款。\n事后，那位人事干员绘声绘色地向其他人讲述那个场景起码不下十遍：陌生的地下空间里，繁复的管线排布得如同巫术法阵，咒言凝成的纸带连接起他和一位冷面女妖，两人在纸带的两端签名，周围是上百只戴着安全帽奔来跑去的“巨型蚂蚁”，他恍然以为自己到访的不是莱茵生命，而是萨米的某个神秘部落，不由得感叹自己见的世面还是太少。\n\n“咒言即是女妖的承诺。只要我还在，它便永不褪色。”",
+            "unLockType": "FAVOR",
+            "unLockParam": "50",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "档案资料一",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "在莱茵生命，说起“莱茵十杰”，“娜斯提”这个名字被提到的频率极低。相比已经无限趋近于一个符号的克丽斯腾、朋友如同水分身一样多的缪尔赛思、严苛刻薄到能让犯错的实习生止啼的斐尔迪南、在哥伦比亚极限冒险者群体中拥有大批追随者的马里亚姆等人，一个辗转于各个施工现场，平时连面都不怎么露，好不容易现身也沉默寡言的工程科主任，实在是想讨论也不知从何谈起。直到......\n直到生态科的小研究员好几次撞见缪尔赛思在看同一档家装综艺，还看得津津有味、啧啧称奇。这位古灵精怪的主任爱好繁多，长期浸淫在游戏、时尚及摄影领域，但改造他人住宅的综艺节目并不在其列。莱茵的八卦小团体顺藤摸瓜，真相随即浮出水面：原来，缪尔赛思是在关注其中一位神秘嘉宾，那位嘉宾匿名参加了多期活动，设计风格前卫大胆，强调非常规的空间秩序，曾在以“未来生活”为主题的一期节目里，将一栋概念住宅设计成了某种“鼷兽轮”，七个不同家装风格的空间滚动轮替，以此最大化地兼顾空间利用与新鲜感。缪尔赛思将有关该嘉宾的节目片段单独剪辑成片，并发送给本人——娜斯提。\n这件事曝光后，哪怕在莱茵的茶水间和实验室走廊——这种各类离谱八卦肆意生长的地方，也掀起了不小的波澜，实在是没人能把那个在节目上仿佛先锋派建筑代言人的家伙和低调务实、对接工程项目总是一丝不苟的工程科主任对上号。大家后来才知道，娜斯提最初参加该节目，只是出于人事科主任雅拉“保持活跃度”的安排，没想到的是，娜斯提随后自己与节目组续签了几季的合同。\n\n“不比那些科研类科室，工程科在创想实验这一块的经费极其有限。有人愿意花钱鼓励你建奇怪的房子，挺好的。”\n——有人壮着胆子去问娜斯提原因时，她这样回答道",
+            "unLockType": "FAVOR",
+            "unLockParam": "100",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "档案资料二",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "【莱茵生命工程科，娜斯提主任为新员工讲解工作须知的录音记录】\n“工程科是莱茵最忙碌的科室，我们既要对接其他事务类科室，又要为结构科、生态科、能量科、源石技艺应用科和科学考察科提供一切工程支持，想办法满足他们无止境的需求。我能给各位的建议是，别把自己当成科学家的朋友，看清楚计划书和设计图纸上的每一行字，告诉他们，哪些可以用地砖夯实、用螺丝钉拧紧，哪些只是不切实际的梦呓，麻烦他们划去。\n“具体而言，能量科提交的实验设施建造申请，通常都经过充分的可行性验证，如斐尔迪南其人，狂妄了些，态度很差，但做事还算靠谱。”\n......\n“生态科，小心缪尔赛思，别被她抓住一些奇怪的把柄。\n“防卫科......塞雷娅曾经主管的部门，那里的人都比较难说话，防卫科作为莱茵各大项目的安全保障，顾虑更多，手段更果决。如今，塞雷娅已经改任总辖，但那套行事风格没变。另外，她本人有严重的‘强迫症’，我曾经为她装修过办公室，那段施工时间体验起来格外漫长。\n“源石技艺应用科的工程，能源设备与应急装置一律按照最高标准验收。至于多萝西——我很早便认识这样的人，她们考虑的人太多，想做到的太多，往往也容易失去太多，但总归值得尊重。”\n......\n“娜斯提主任，可以提个问题吗？”\n“请讲。”\n“您刚刚提起其他主任，可并不像单纯评价同事欸？”\n“......是吗？无意中多说了一点，抱歉。总之，如今的莱茵生命经历了很多变化，有些名字已经不常被提起，有些名字正在被记住。变化是科学的常态，是工程的核心词。莱茵这座建筑依然坚实。再次欢迎各位的到来。”",
+            "unLockType": "FAVOR",
+            "unLockParam": "150",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "档案资料三",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "下葬，对卡兹戴尔人来说，和把过冬的土豆埋进地里没什么区别。真正的告别，发生在那之后，要等到死者变成源石晶簇从地里冒出来。那时候，还记得他的人会聚在一起，在晶簇上刻下他的名字、他的绰号和乱七八糟的事迹，还有人们对他的感谢或咒骂。\n“那时我才三岁。一个病恹恹的男人小心翼翼地敲打着地上的晶簇。我问他在干什么，他说，他老婆的晶簇太小了，他想刻的东西又太多。他想把那块晶簇敲下来，带回去当挂衣钩用。这样，他每天早晚都能和它说上两句。”\n\n哥伦比亚的拓荒车队永远在行进，在葬礼时也不例外。死者最后留下的，不论是骨灰还是源石粉尘，都会在人们第二天启程时被抛撒在身后。骨灰盒从一个人手里传到另一个人手里，每个人都抛上一把，对死者最后说上几句告别的话。\n“前一天晚上，我试着唱了挽歌。我唱得很糟，他们也没听懂。所以第二天撒骨灰的时候，我很意外他们会把那个盒子递给我。一个普通的塑料餐盒，里面还剩最后一把灰烬。‘如果你愿意再唱一遍那首歌的话’，他们说。”\n——娜斯提，谈起她见识过的葬礼习俗\n\n【“大服务器”参观笔记】\n讲到有关死亡的声音，哀珐尼尔教授让我们聆听了过去千万年间众魂的声音，但提及新的众魂与新的声音，教授沉默不语，只是让我们去参观一个地方。应他的要求，我们来到了这棵几乎占据了一整座浮空地块的巨木面前，“大服务器”的主体建筑就层层叠叠地攀附在它的主干之上。\n这里的负责人，娜斯提·鲁诺瑞伊主任，接待了我们。她一面抱怨着哀珐尼尔教授送学生过来参观严重影响了她的工作，一面又不厌其详地向我们展示“大服务器”每一处设施的内部结构。狼狈地扶着安全帽从盘根错节的施工管道爬出来的时候，我几乎要觉得自己学的不是声乐技艺学，而是土木工程了。在逼仄的储物间，几个树枝形的机器人从墙角爬出，给我们一人递上了一个小纸盒。\n“这就是哀珐尼尔希望你们在这里得到的答案。”\n好像先前五个小时的参观还不够说明娜斯提主任是个难以捉摸的人似的，纸盒里不是论文，也不是图纸，而是一块造型精致的小蛋糕。\n仿佛没看出我们巨大的疑惑，娜斯提主任开始向我们讲述这座“大服务器”的性质：\n“我去过很多地方，也参加过很多葬礼。不论在什么场合，以什么方式，活着的人总要费尽心思把自己所有的爱与恨、释怀与遗憾，打包进几句告别的话里。可惜，死者却没有机会做同样的事情。如今，‘树’给了他们一个机会，而这座‘大服务器’，就用来存储他们告别的话语。\n“除了不计其数的‘我爱你’‘我恨你’‘谢谢你’‘对不起’之外，有些人留下的，是更特别的内容：一篇阐述濒死体验的报告、一段从未被写下的旋律、一张异想天开的设计图，又或者只是一个笑话......\n“当然，这种蛋糕的配方也是其中之一。如果不是一位素不相识的人留下了这份配方，我或许永远都不会与烘焙二字扯上关系。哀珐尼尔想让你们听听新的众魂的声音，现在，你们都听到了。\n“......尝到了，严格来说。”",
+            "unLockType": "FAVOR",
+            "unLockParam": "200",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "档案资料四",
+        "unLockorNot": true
+      },
+      {
+        "stories": [
+          {
+            "storyText": "地面上排布着数不清的缆线，房间中央，数据如同洪流般冲刷着终端的屏幕，女妖将外套系在腰间，埋首于面前的装置，浑然忘我。你犹豫着是否要自行离开，毕竟这次造访本身也是临时起意，未来悬于天际的城市也好，深种在舰船内部或星辰间的“树”也好，有些待讨论的事项，也没有急到非今天不可。\n在你挪动脚步之前，女妖淡淡地说了一句：“稍等，帮我看下结果。”她依旧没有回头。\n你这才注意到，在女妖的身后，离你站立之处不到一米远的地方，两个戴着安全帽的树枝形机器人正相对而立，各自卖力地拧转着一个复原难度极大的高阶变种魔方。转动的格子擦出火星，你甚至在这些没有五官的小家伙之间感受到了激烈的火药味......\n它们是在比赛？为了什么？你熟悉眼前的女妖，她遇到了怎样的工程难题，需要依靠这种方式来做决定？你不禁好奇。\n“左边的赢了，约翰老妈套餐；右边的赢了，压缩饼干......”\n“还有新的魔方吗？”你问女妖。你突然想到，或许比赛可以有第三种结果。",
+            "unLockType": "AWAKE",
+            "unLockParam": "2;1",
+            "showType": "DIRECT",
+            "showParam": "",
+            "unLockString": ""
+          }
+        ],
+        "storyTitle": "晋升记录",
+        "unLockorNot": true
+      }
+    ],
+    "handbookAvgList": {}
+  },
+  "charWords": {
+    "char_4212_nasti_CN_001": {
+      "charWordId": "char_4212_nasti_CN_001",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_001",
+      "voiceText": "给，施工计划书和数据核对表。为什么这副表情？我的一天不比你的长，没理由单方面替你干活。",
+      "voiceTitle": "任命助理",
+      "voiceIndex": 1,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "HOME_PLACE",
+      "voiceAsset": "char_4212_nasti/CN_001"
+    },
+    "char_4212_nasti_CN_002": {
+      "charWordId": "char_4212_nasti_CN_002",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_002",
+      "voiceText": "请握住这几节“树枝”......很好，我已掌握你的身高、体重和骨密度数据。十分钟后，机器人会送来为你量身定做的安全设备。惊讶什么，你没打算跟我进施工现场？",
+      "voiceTitle": "交谈1",
+      "voiceIndex": 2,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_002"
+    },
+    "char_4212_nasti_CN_003": {
+      "charWordId": "char_4212_nasti_CN_003",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_003",
+      "voiceText": "霍尔海雅？一个将探究和挑衅写在脸上的羽蛇，给人添麻烦是她的特长。她自称是我的朋友......我听到过这样的传言。只要不耽误我工作，我不会讨厌她。你也一样，博士。",
+      "voiceTitle": "交谈2",
+      "voiceIndex": 3,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_003"
+    },
+    "char_4212_nasti_CN_004": {
+      "charWordId": "char_4212_nasti_CN_004",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_004",
+      "voiceText": "我拒绝参与罗德岛的工程优化——不，莱茵的技术你们偷不走。只是同为工程师，我知道那位血魔熬夜画施工图的时候是什么心情，这不是特里蒙八点档的建筑真人秀，我没兴趣点评别人的家。",
+      "voiceTitle": "交谈3",
+      "voiceIndex": 4,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_004"
+    },
+    "char_4212_nasti_CN_005": {
+      "charWordId": "char_4212_nasti_CN_005",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_005",
+      "voiceText": "哪怕克丽斯腾还在的时候，所谓的“十杰”也很少聚齐，所以现在那张圆桌上空了一些位置，并不意味着多大的危机。我在工程科，我很清楚这台名为“莱茵”的机器还能运作多久。",
+      "voiceTitle": "晋升后交谈1",
+      "voiceIndex": 5,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "AWAKE",
+      "unlockParam": [
+        {
+          "valueInt": 1
+        },
+        {
+          "valueInt": 1
+        }
+      ],
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_005"
+    },
+    "char_4212_nasti_CN_006": {
+      "charWordId": "char_4212_nasti_CN_006",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_006",
+      "voiceText": "没错，万千哥伦比亚人旁观了那场坠落，它壮观得令人灰心。我不想讨论为一股狂热的潮流降温是否有必要，博士......羽兽在坠落中学会飞翔，终有一日，卡兹戴尔将悬于天顶。",
+      "voiceTitle": "晋升后交谈2",
+      "voiceIndex": 6,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "AWAKE",
+      "unlockParam": [
+        {
+          "valueInt": 2
+        },
+        {
+          "valueInt": 1
+        }
+      ],
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_006"
+    },
+    "char_4212_nasti_CN_007": {
+      "charWordId": "char_4212_nasti_CN_007",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_007",
+      "voiceText": "我昨天在廊桥上邀请你跳舞？唉，看来缪尔赛思真的喜欢上了这种模仿游戏。博士，我权且相信你没有认出那是水分身，所以，你是不够了解缪尔赛思，还是不够了解我？",
+      "voiceTitle": "信赖提升后交谈1",
+      "voiceIndex": 7,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "FAVOR",
+      "unlockParam": [
+        {
+          "valueInt": 40
+        }
+      ],
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_007"
+    },
+    "char_4212_nasti_CN_008": {
+      "charWordId": "char_4212_nasti_CN_008",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_008",
+      "voiceText": "你听错了，我没有唱歌——你认识逻各斯，以他为参照，我是个不合格的女妖，也已经不属于河谷。但挽歌于我的意义并未改变。累了？如果不习惯在施工的背景噪音里入睡，我可以用咒言帮你。",
+      "voiceTitle": "信赖提升后交谈2",
+      "voiceIndex": 8,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "FAVOR",
+      "unlockParam": [
+        {
+          "valueInt": 100
+        }
+      ],
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_008"
+    },
+    "char_4212_nasti_CN_009": {
+      "charWordId": "char_4212_nasti_CN_009",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_009",
+      "voiceText": "看看我们头顶的阻隔层，你觉得它遥不可及吗？还是说，你清楚其形成的原理和解构它的手段？克丽斯腾笃信她的选择是有意义的，而我会确保这份意义成立。博士，我在意你的立场。",
+      "voiceTitle": "信赖提升后交谈3",
+      "voiceIndex": 9,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "FAVOR",
+      "unlockParam": [
+        {
+          "valueInt": 200
+        }
+      ],
+      "placeType": "HOME_SHOW",
+      "voiceAsset": "char_4212_nasti/CN_009"
+    },
+    "char_4212_nasti_CN_010": {
+      "charWordId": "char_4212_nasti_CN_010",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_010",
+      "voiceText": "终于，浑浊的梦要沉淀了......",
+      "voiceTitle": "闲置",
+      "voiceIndex": 10,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "HOME_WAIT",
+      "voiceAsset": "char_4212_nasti/CN_010"
+    },
+    "char_4212_nasti_CN_011": {
+      "charWordId": "char_4212_nasti_CN_011",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_011",
+      "voiceText": "初次见面，莱茵生命工程科主任，娜斯提。我有好几位同事经常提起你，幸会。",
+      "voiceTitle": "干员报到",
+      "voiceIndex": 11,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "GACHA",
+      "voiceAsset": "char_4212_nasti/CN_011"
+    },
+    "char_4212_nasti_CN_012": {
+      "charWordId": "char_4212_nasti_CN_012",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_012",
+      "voiceText": "倒退三秒，左边显像终端的数据输出有误......好了，问题解决。",
+      "voiceTitle": "观看作战记录",
+      "voiceIndex": 12,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "LEVEL_UP",
+      "voiceAsset": "char_4212_nasti/CN_012"
+    },
+    "char_4212_nasti_CN_013": {
+      "charWordId": "char_4212_nasti_CN_013",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_013",
+      "voiceText": "我需要发表演讲吗......抱歉，讨论抽象的话题会让我觉得虚无。",
+      "voiceTitle": "精英化晋升1",
+      "voiceIndex": 13,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "AWAKE",
+      "unlockParam": [
+        {
+          "valueInt": 1
+        },
+        {
+          "valueInt": 1
+        }
+      ],
+      "placeType": "EVOLVE_ONE",
+      "voiceAsset": "char_4212_nasti/CN_013"
+    },
+    "char_4212_nasti_CN_014": {
+      "charWordId": "char_4212_nasti_CN_014",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_014",
+      "voiceText": "感谢你与罗德岛的认可，博士。我们合作取得的成果令人安心。",
+      "voiceTitle": "精英化晋升2",
+      "voiceIndex": 14,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "AWAKE",
+      "unlockParam": [
+        {
+          "valueInt": 2
+        },
+        {
+          "valueInt": 1
+        }
+      ],
+      "placeType": "EVOLVE_TWO",
+      "voiceAsset": "char_4212_nasti/CN_014"
+    },
+    "char_4212_nasti_CN_017": {
+      "charWordId": "char_4212_nasti_CN_017",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_017",
+      "voiceText": "罗德岛的许多干员都身兼数职，跟莱茵的情况很像。",
+      "voiceTitle": "编入队伍",
+      "voiceIndex": 17,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "SQUAD",
+      "voiceAsset": "char_4212_nasti/CN_017"
+    },
+    "char_4212_nasti_CN_018": {
+      "charWordId": "char_4212_nasti_CN_018",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_018",
+      "voiceText": "塞雷娅负责突破敌方包围，缪尔赛思负责必要的谈判斡旋，她们缺一不可。",
+      "voiceTitle": "任命队长",
+      "voiceIndex": 18,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "SQUAD_FIRST",
+      "voiceAsset": "char_4212_nasti/CN_018"
+    },
+    "char_4212_nasti_CN_019": {
+      "charWordId": "char_4212_nasti_CN_019",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_019",
+      "voiceText": "无声的言语，同样奏效。",
+      "voiceTitle": "行动出发",
+      "voiceIndex": 19,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_START",
+      "voiceAsset": "char_4212_nasti/CN_019"
+    },
+    "char_4212_nasti_CN_020": {
+      "charWordId": "char_4212_nasti_CN_020",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_020",
+      "voiceText": "必须确保施工现场的环境安全。",
+      "voiceTitle": "行动开始",
+      "voiceIndex": 20,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_FACE_ENEMY",
+      "voiceAsset": "char_4212_nasti/CN_020"
+    },
+    "char_4212_nasti_CN_021": {
+      "charWordId": "char_4212_nasti_CN_021",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_021",
+      "voiceText": "要是计划不够精准，我会修正。",
+      "voiceTitle": "选中干员1",
+      "voiceIndex": 21,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_SELECT",
+      "voiceAsset": "char_4212_nasti/CN_021"
+    },
+    "char_4212_nasti_CN_022": {
+      "charWordId": "char_4212_nasti_CN_022",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_022",
+      "voiceText": "工程报错？常事。",
+      "voiceTitle": "选中干员2",
+      "voiceIndex": 22,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_SELECT",
+      "voiceAsset": "char_4212_nasti/CN_022"
+    },
+    "char_4212_nasti_CN_023": {
+      "charWordId": "char_4212_nasti_CN_023",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_023",
+      "voiceText": "不用重申施工目标，我已经开始工作了。",
+      "voiceTitle": "部署1",
+      "voiceIndex": 23,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_PLACE",
+      "voiceAsset": "char_4212_nasti/CN_023"
+    },
+    "char_4212_nasti_CN_024": {
+      "charWordId": "char_4212_nasti_CN_024",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_024",
+      "voiceText": "别被纸带绊倒。",
+      "voiceTitle": "部署2",
+      "voiceIndex": 24,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_PLACE",
+      "voiceAsset": "char_4212_nasti/CN_024"
+    },
+    "char_4212_nasti_CN_025": {
+      "charWordId": "char_4212_nasti_CN_025",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_025",
+      "voiceText": "再听听，这只是施工的杂音？",
+      "voiceTitle": "作战中1",
+      "voiceIndex": 25,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_SKILL_1",
+      "voiceAsset": "char_4212_nasti/CN_025"
+    },
+    "char_4212_nasti_CN_026": {
+      "charWordId": "char_4212_nasti_CN_026",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_026",
+      "voiceText": "忏悔？我只听见灵魂的乱码。",
+      "voiceTitle": "作战中2",
+      "voiceIndex": 26,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_SKILL_2",
+      "voiceAsset": "char_4212_nasti/CN_026"
+    },
+    "char_4212_nasti_CN_027": {
+      "charWordId": "char_4212_nasti_CN_027",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_027",
+      "voiceText": "“挽歌并非万物死亡之归宿。”",
+      "voiceTitle": "作战中3",
+      "voiceIndex": 27,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_SKILL_3",
+      "voiceAsset": "char_4212_nasti/CN_027"
+    },
+    "char_4212_nasti_CN_028": {
+      "charWordId": "char_4212_nasti_CN_028",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_028",
+      "voiceText": "“世间无处供你栖脚。”",
+      "voiceTitle": "作战中4",
+      "voiceIndex": 28,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BATTLE_SKILL_4",
+      "voiceAsset": "char_4212_nasti/CN_028"
+    },
+    "char_4212_nasti_CN_029": {
+      "charWordId": "char_4212_nasti_CN_029",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_029",
+      "voiceText": "竣工，各位辛苦。",
+      "voiceTitle": "完成高难行动",
+      "voiceIndex": 29,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "FOUR_STAR",
+      "voiceAsset": "char_4212_nasti/CN_029"
+    },
+    "char_4212_nasti_CN_030": {
+      "charWordId": "char_4212_nasti_CN_030",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_030",
+      "voiceText": "再补充一轮检查......对我们来说，“完美”只是合格。",
+      "voiceTitle": "3星结束行动",
+      "voiceIndex": 30,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "THREE_STAR",
+      "voiceAsset": "char_4212_nasti/CN_030"
+    },
+    "char_4212_nasti_CN_031": {
+      "charWordId": "char_4212_nasti_CN_031",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_031",
+      "voiceText": "达成“预期”。怎么说？我们给自己保留了改进空间。",
+      "voiceTitle": "非3星结束行动",
+      "voiceIndex": 31,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "TWO_STAR",
+      "voiceAsset": "char_4212_nasti/CN_031"
+    },
+    "char_4212_nasti_CN_032": {
+      "charWordId": "char_4212_nasti_CN_032",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_032",
+      "voiceText": "为什么要生气？你猜莱茵的各个项目正式动工前，我要为同事改多少遍施工图？",
+      "voiceTitle": "行动失败",
+      "voiceIndex": 32,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "LOSE",
+      "voiceAsset": "char_4212_nasti/CN_032"
+    },
+    "char_4212_nasti_CN_033": {
+      "charWordId": "char_4212_nasti_CN_033",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_033",
+      "voiceText": "电梯间的灯泡接触不良，我换了。",
+      "voiceTitle": "进驻设施",
+      "voiceIndex": 33,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BUILDING_PLACE",
+      "voiceAsset": "char_4212_nasti/CN_033"
+    },
+    "char_4212_nasti_CN_034": {
+      "charWordId": "char_4212_nasti_CN_034",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_034",
+      "voiceText": "“静滞”——这算正当防卫。",
+      "voiceTitle": "戳一下",
+      "voiceIndex": 34,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BUILDING_TOUCHING",
+      "voiceAsset": "char_4212_nasti/CN_034"
+    },
+    "char_4212_nasti_CN_036": {
+      "charWordId": "char_4212_nasti_CN_036",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_036",
+      "voiceText": "别揪机器人的叶子......知道了，我会教你吹母亲作的那首曲子。",
+      "voiceTitle": "信赖触摸",
+      "voiceIndex": 36,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BUILDING_FAVOR_BUBBLE",
+      "voiceAsset": "char_4212_nasti/CN_036"
+    },
+    "char_4212_nasti_CN_037": {
+      "charWordId": "char_4212_nasti_CN_037",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_037",
+      "voiceText": "明日方舟。",
+      "voiceTitle": "标题",
+      "voiceIndex": 37,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "LOADING_PANEL",
+      "voiceAsset": "char_4212_nasti/CN_037"
+    },
+    "char_4212_nasti_CN_038": {
+      "charWordId": "char_4212_nasti_CN_038",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_038",
+      "voiceText": "接上最后一根电缆，三、二、一，启动......每到这种时候，研究员们都会冲着四溅的电火花兴奋地喊“烟花”，你倒是很平静——新年快乐，博士，我们来不及回去和其他人庆祝了。",
+      "voiceTitle": "新年祝福",
+      "voiceIndex": 38,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "NEW_YEAR",
+      "voiceAsset": "char_4212_nasti/CN_038"
+    },
+    "char_4212_nasti_CN_042": {
+      "charWordId": "char_4212_nasti_CN_042",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_042",
+      "voiceText": "你撞到我的“树枝”了。",
+      "voiceTitle": "问候",
+      "voiceIndex": 42,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "GREETING",
+      "voiceAsset": "char_4212_nasti/CN_042"
+    },
+    "char_4212_nasti_CN_043": {
+      "charWordId": "char_4212_nasti_CN_043",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_043",
+      "voiceText": "你还活着，树叶就是比骨哨应景的乐器。我熟悉的旋律？不，约翰老妈的广告曲不太合适......曾经，有一群拓荒者瘫坐在脚手架上，对着夕阳哼起一首歌，欢迎一位女妖的加入。听听看？",
+      "voiceTitle": "生日",
+      "voiceIndex": 43,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "BIRTHDAY",
+      "voiceAsset": "char_4212_nasti/CN_043"
+    },
+    "char_4212_nasti_CN_044": {
+      "charWordId": "char_4212_nasti_CN_044",
+      "wordKey": "char_4212_nasti",
+      "charId": "char_4212_nasti",
+      "voiceId": "CN_044",
+      "voiceText": "女妖不会忘记养育她的河谷，拓荒者不会忘记她跋涉过的荒野——这是我加入莱茵生命的来路，也是我的未来。博士，罗德岛对你而言意味着什么，你又将给予它怎样的指引？我们的合作将继续。",
+      "voiceTitle": "周年庆典",
+      "voiceIndex": 44,
+      "voiceType": "ONLY_TEXT",
+      "unlockType": "DIRECT",
+      "unlockParam": {},
+      "lockDescription": "",
+      "placeType": "ANNIVERSARY",
+      "voiceAsset": "char_4212_nasti/CN_044"
+    }
+  },
+  "voiceLangDict": {
+    "wordkeys": [
+      "char_4212_nasti"
+    ],
+    "charId": "char_4212_nasti",
+    "dict": {
+      "CN_MANDARIN": {
+        "wordkey": "char_4212_nasti",
+        "voiceLangType": "CN_MANDARIN",
+        "cvName": [
+          "叶佳怡"
+        ]
+      },
+      "JP": {
+        "wordkey": "char_4212_nasti",
+        "voiceLangType": "JP",
+        "cvName": [
+          "福原绫香"
+        ]
+      }
+    }
+  },
+  "charSkins": {
+    "char_4212_nasti#1": {
+      "skinId": "char_4212_nasti#1",
+      "charId": "char_4212_nasti",
+      "illustId": "illust_char_4212_nasti_1",
+      "avatarId": "char_4212_nasti",
+      "portraitId": "char_4212_nasti_1",
+      "battleSkin": {
+        "overwritePrefab": false,
+        "skinOrPrefabId": "DefaultSkin"
+      },
+      "isBuySkin": false,
+      "voiceType": "NONE",
+      "displaySkin": {
+        "colorList": [
+          "",
+          "",
+          "#64832f",
+          "",
+          ""
+        ],
+        "titleList": [
+          "",
+          ""
+        ],
+        "modelName": "Nasti",
+        "drawerList": [
+          "AerialB"
+        ],
+        "designerList": [
+          "Ametora"
+        ],
+        "skinGroupId": "ILLUST_0",
+        "skinGroupName": "默认服装",
+        "skinGroupSortIndex": -50,
+        "content": "干员平时最常穿着的服装。\n虽然不一定比制服更实用，但是一定是干员最舒适的搭配之一。",
+        "sortId": -3,
+        "getTime": 0,
+        "onYear": 0,
+        "onPeriod": 0
+      }
+    },
+    "char_4212_nasti#2": {
+      "skinId": "char_4212_nasti#2",
+      "charId": "char_4212_nasti",
+      "illustId": "illust_char_4212_nasti_2",
+      "avatarId": "char_4212_nasti_2",
+      "portraitId": "char_4212_nasti_2",
+      "battleSkin": {
+        "overwritePrefab": false,
+        "skinOrPrefabId": "DefaultSkin"
+      },
+      "isBuySkin": false,
+      "voiceType": "NONE",
+      "displaySkin": {
+        "colorList": [
+          "",
+          "",
+          "#829a23",
+          "",
+          ""
+        ],
+        "titleList": [
+          "",
+          ""
+        ],
+        "modelName": "Nasti",
+        "drawerList": [
+          "AerialB"
+        ],
+        "designerList": [
+          "Ametora"
+        ],
+        "skinGroupId": "ILLUST_2",
+        "skinGroupName": "默认服装",
+        "skinGroupSortIndex": -10,
+        "content": "晋升后，经过调整的服装。\n根据干员的经验，对服装细节进行改进，针对一些作战环境进行了特化处理。在满足战斗需求的同时，最大程度还原各位干员熟悉的舒适穿着体验。",
+        "sortId": -1,
+        "getTime": 0,
+        "onYear": 0,
+        "onPeriod": 0
+      }
+    }
+  },
+  "charSkills": {
+    "skchr_nasti_1": {
+      "skillId": "skchr_nasti_1",
+      "hidden": false,
+      "levels": [
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 50,
+            "initSp": 18,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 35,
+          "blackboard": {
+            "talent@def": 0.35,
+            "atk": 0.42,
+            "def": 0.42
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 49,
+            "initSp": 19,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 35,
+          "blackboard": {
+            "talent@def": 0.36,
+            "atk": 0.45,
+            "def": 0.45
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 48,
+            "initSp": 20,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 35,
+          "blackboard": {
+            "talent@def": 0.38,
+            "atk": 0.48,
+            "def": 0.48
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 47,
+            "initSp": 21,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 38,
+          "blackboard": {
+            "talent@def": 0.4,
+            "atk": 0.52,
+            "def": 0.52
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 46,
+            "initSp": 22,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 38,
+          "blackboard": {
+            "talent@def": 0.42,
+            "atk": 0.56,
+            "def": 0.56
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 45,
+            "initSp": 23,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 38,
+          "blackboard": {
+            "talent@def": 0.44,
+            "atk": 0.6,
+            "def": 0.6
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 44,
+            "initSp": 25,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 40,
+          "blackboard": {
+            "talent@def": 0.46,
+            "atk": 0.65,
+            "def": 0.65
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 42,
+            "initSp": 26,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 40,
+          "blackboard": {
+            "talent@def": 0.49,
+            "atk": 0.7,
+            "def": 0.7
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 41,
+            "initSp": 27,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 40,
+          "blackboard": {
+            "talent@def": 0.52,
+            "atk": 0.75,
+            "def": 0.75
+          }
+        },
+        {
+          "name": "“拱卫”",
+          "description": "携带此技能时：装置使前方干员防御力提升\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，同时攻击阻挡的所有敌人；装置效果改为使前方干员阻挡数<@ba.vup>+1</>，防御力<@ba.vup>+{talent@def:0%}</>，装置每秒流失2%最大生命值\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 40,
+            "initSp": 28,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_1",
+          "duration": 40,
+          "blackboard": {
+            "talent@def": 0.55,
+            "atk": 0.8,
+            "def": 0.8
+          }
+        }
+      ]
+    },
+    "skchr_nasti_2": {
+      "skillId": "skchr_nasti_2",
+      "hidden": false,
+      "levels": [
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 38,
+            "initSp": 16,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.04,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.32,
+            "talent@shield_max_hp_rate": 0.32,
+            "talent@shield_each_hp_rate": 0.02
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 37,
+            "initSp": 17,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.04,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.32,
+            "talent@shield_max_hp_rate": 0.32,
+            "talent@shield_each_hp_rate": 0.02
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 36,
+            "initSp": 18,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.04,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.32,
+            "talent@shield_max_hp_rate": 0.32,
+            "talent@shield_each_hp_rate": 0.02
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 35,
+            "initSp": 19,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.06,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.48,
+            "talent@shield_max_hp_rate": 0.48,
+            "talent@shield_each_hp_rate": 0.03
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 34,
+            "initSp": 20,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.06,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.48,
+            "talent@shield_max_hp_rate": 0.48,
+            "talent@shield_each_hp_rate": 0.03
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 33,
+            "initSp": 21,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.06,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.48,
+            "talent@shield_max_hp_rate": 0.48,
+            "talent@shield_each_hp_rate": 0.03
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 32,
+            "initSp": 20,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.08,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.64,
+            "talent@shield_max_hp_rate": 0.64,
+            "talent@shield_each_hp_rate": 0.04
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 30,
+            "initSp": 21,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.08,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.64,
+            "talent@shield_max_hp_rate": 0.64,
+            "talent@shield_each_hp_rate": 0.04
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 29,
+            "initSp": 22,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.08,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.64,
+            "talent@shield_max_hp_rate": 0.64,
+            "talent@shield_each_hp_rate": 0.04
+          }
+        },
+        {
+          "name": "“执行”",
+          "description": "携带此技能时：装置部署后逐渐回复自身生命值，激活后每0.5秒流失1点生命值，使前方干员获得<@ba.vup>1</>点技力和相当于娜斯提生命上限<@ba.vup>{talent@shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>\\n立即激活场上装置，停止攻击，每0.5秒获得相当于生命上限<@ba.vup>{attack@nasti_s2[update_shield].shield_each_hp_rate:0%}</>的<$ba.barrier>屏障</>（最多不超过生命上限{talent@shield_max_hp_rate:0%}）\\n<@ba.rem>技能结束时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 28,
+            "initSp": 23,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_2",
+          "duration": 4,
+          "blackboard": {
+            "attack@nasti_s2[update_shield].interval": 0.5,
+            "attack@nasti_s2[update_shield].shield_each_hp_rate": 0.1,
+            "attack@nasti_s2[update_shield].shield_max_hp_rate": 0.8,
+            "talent@shield_max_hp_rate": 0.8,
+            "talent@shield_each_hp_rate": 0.05
+          }
+        }
+      ]
+    },
+    "skchr_nasti_3": {
+      "skillId": "skchr_nasti_3",
+      "hidden": false,
+      "levels": [
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 33,
+            "initSp": 8,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 0.8,
+            "def": 0.8
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 32,
+            "initSp": 9,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 0.85,
+            "def": 0.85
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 31,
+            "initSp": 10,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 0.9,
+            "def": 0.9
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 30,
+            "initSp": 11,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 1,
+            "def": 1
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 29,
+            "initSp": 12,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 1.1,
+            "def": 1.1
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 28,
+            "initSp": 13,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 1.2,
+            "def": 1.2
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 27,
+            "initSp": 14,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 1.3,
+            "def": 1.3
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 26,
+            "initSp": 15,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 1.4,
+            "def": 1.4
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 25,
+            "initSp": 16,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 1.5,
+            "def": 1.5
+          }
+        },
+        {
+          "name": "栖脚地",
+          "description": "携带此技能时：装置可建造并升级一个可以放置远程干员并为其提供增益的特殊高台\\n攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；小工程师装置为高台装置回复技力和生命的效果翻倍\\n<@ba.rem>技能开启时获得一个装置</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "maxChargeTime": 1,
+            "spCost": 25,
+            "initSp": 17,
+            "increment": 1
+          },
+          "prefabId": "skchr_nasti_3",
+          "duration": 15,
+          "blackboard": {
+            "atk": 1.6,
+            "def": 1.6
+          }
+        }
+      ]
+    }
+  },
+  "baseSkills": {
+    "charId": "char_4212_nasti",
+    "maxManpower": 8640000,
+    "buffChar": [
+      {
+        "buffData": [
+          {
+            "buffId": "manu_prod_spd[011]",
+            "cond": {
+              "phase": "PHASE_0",
+              "level": 1
+            }
+          }
+        ]
+      },
+      {
+        "buffData": [
+          {
+            "buffId": "manu_formula_spd&cost_bd[100]",
+            "cond": {
+              "phase": "PHASE_2",
+              "level": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "baseSkillData": {
+    "manu_prod_spd[011]": {
+      "buffId": "manu_prod_spd[011]",
+      "buffName": "莱茵科技·β",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd2",
+      "sortId": 3554,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "进驻制造站时，生产力<@cc.vup>+25%</>",
+      "efficiency": 25,
+      "targetGroupSortId": 0,
+      "targets": [
+        "F_GOLD",
+        "F_EXP",
+        "F_DIAMOND"
+      ]
+    },
+    "manu_formula_spd&cost_bd[100]": {
+      "buffId": "manu_formula_spd&cost_bd[100]",
+      "buffName": "造价高昂",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold&rhine",
+      "sortId": 3705,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "进驻制造站时，基建内（不包含副手及活动室使用者）每有1名<$cc.g.rh><@cc.kw>莱茵生命</></>干员（最多<@cc.kw>5</>名），<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+3%</>",
+      "efficiency": 0,
+      "targetGroupSortId": 1,
+      "targets": [
+        "F_GOLD"
+      ]
+    }
+  },
+  "charModules": {
+    "uniequip_001_nasti": {
+      "uniEquipId": "uniequip_001_nasti",
+      "uniEquipName": "娜斯提证章",
+      "uniEquipIcon": "uniequip_001_nasti",
+      "uniEquipDesc": "干员娜斯提擅长使用装置协助队友作战\n根据外勤部门决议\n在外勤任务中划分为辅助干员，行使工匠职责\n特别颁发此证章\n以兹证明",
+      "typeIcon": "original",
+      "typeName1": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": "PHASE_2",
+      "unlockEvolvePhase": "PHASE_0",
+      "charId": "char_4212_nasti",
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "missionList": {},
+      "type": "INITIAL",
+      "uniEquipGetTime": 1764889200,
+      "uniEquipShowEnd": 1767913200,
+      "charEquipOrder": 0,
+      "hasUnlockMission": false,
+      "isSpecialEquip": false,
+      "charColor": "#64832f"
+    },
+    "uniequip_002_nasti": {
+      "uniEquipId": "uniequip_002_nasti",
+      "uniEquipName": "工程师们",
+      "uniEquipIcon": "uniequip_002_nasti",
+      "uniEquipDesc": "“娜斯提主任，听说您从加入莱茵生命，到成为工程科主任，只用了短短半年的时间？”\n“三个月。”\n“竟然......三个月？”\n“准确说，我加入之后，莱茵生命才开始正式组建工程科，为缪尔赛思、斐尔迪南他们已经堆积如山的计划书提供工程支持。但我的身份特殊，那时还在初创期的莱茵已经吸引了不少人的目光，一个来历不明的萨卡兹要想正常工作不受干扰，三个月的时间，确实算短。”\n“资质审查之类的？”\n“有位在梅兰德的同胞暗中给过一点帮助。当然这是后来才知道的事情。”\n“隐藏行迹很辛苦吧？”\n“你可能听多了茶水间的传言。这种浪费时间的例行谈话越长，我接下来需要‘隐藏行迹’的时间也就越长。这个年轻的公司，甚至这个年轻的国家，没有一刻不在从古老的秘密中汲取养分。”\n“非常抱歉，娜斯提主任。我、我有点紧张，我本来以为您会拒绝参加这次的例行人事谈话，或者像缪尔赛思主任一样应付我，谈话都进行一半了，我才发现坐在对面的是水分身......”\n“它们没有这样的功能。”\n“它们？哦，您是说您脚边的机器人。根据人事科的问卷调查结果，莱茵的很多员工都对它们很感兴趣......应该怎么称呼它们？”\n“枝状全构件复合型精密作业机器人。它们每一个都有独特的八位字符编号，用于区分对应的作业范围。它们最核心的构件由我的咒言写就，因此可以无障碍接收我的指令。”\n“我可以理解为，娜斯提主任是它们的母亲吗？”\n“不可以。它们做我所想，和我一样，都是某些工程的螺钉或者砖石。以及，不要轻易在死物身上投注如此珍贵的情感。”\n“......”\n“好了孩子，不要硬着头皮找话题了，接下来的谈话我来就好。”\n——摘自莱茵生命人事科录音\n\n感谢神，在我让会议室的气氛滑向冰冷的深渊之前，雅拉主任及时出现了。\n实话说，除了日程有点难约，这位工程科主任并不算多么难相处，她只是更专注工作、更注重效率而已，我大可以自然一些。\n屋内两个人的话题迅速转到了总辖身上，大概是雅拉主任在旁敲侧击地询问总辖的行踪。\n“雅拉，这才是例行谈话的真实目的吧？”谈话在继续，我听见娜斯提主任的声音难得地软了些，“克丽斯腾不希望你知晓太多。我理解她为什么这么做，所以，无可奉告。”\n看来我是没机会向她道歉了。\n——人事科员工珍妮弗的补充说明",
+      "typeIcon": "cra-x",
+      "typeName1": "CRA",
+      "typeName2": "X",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": "PHASE_2",
+      "unlockEvolvePhase": "PHASE_2",
+      "charId": "char_4212_nasti",
+      "showLevel": 1,
+      "unlockLevel": 60,
+      "missionList": [
+        "uniequip_002_nasti_1",
+        "uniequip_002_nasti_2"
+      ],
+      "unlockFavors": {
+        "1": 0,
+        "2": 2732,
+        "3": 10070
+      },
+      "itemCost": {
+        "1": [
+          {
+            "id": "mod_unlock_token",
+            "count": 4,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30135",
+            "count": 2,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "4001",
+            "count": 80000,
+            "type": "GOLD"
+          }
+        ],
+        "2": [
+          {
+            "id": "mod_unlock_token",
+            "count": 4,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "mod_update_token_1",
+            "count": 60,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30155",
+            "count": 3,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "4001",
+            "count": 100000,
+            "type": "GOLD"
+          }
+        ],
+        "3": [
+          {
+            "id": "mod_unlock_token",
+            "count": 4,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "mod_update_token_2",
+            "count": 20,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "30145",
+            "count": 4,
+            "type": "MATERIAL"
+          },
+          {
+            "id": "4001",
+            "count": 120000,
+            "type": "GOLD"
+          }
+        ]
+      },
+      "type": "ADVANCED",
+      "uniEquipGetTime": 1764889200,
+      "uniEquipShowEnd": 1767913200,
+      "charEquipOrder": 1,
+      "hasUnlockMission": true,
+      "isSpecialEquip": false,
+      "charColor": "#64832f"
+    }
+  },
+  "moduleMissions": {
+    "uniequip_002_nasti_1": {
+      "template": "EquipmentDeployTotal",
+      "desc": "战斗中非助战娜斯提累计部署支援装置25个",
+      "paramList": [
+        "25",
+        "token_10059_nasti_nstdef;token_10060_nasti_nstchr;token_10061_nasti_nstbld",
+        "char_4212_nasti"
+      ],
+      "uniEquipMissionId": "uniequip_002_nasti_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_nasti"
+    },
+    "uniequip_002_nasti_2": {
+      "template": "EquipmentSkillCastStage",
+      "desc": "3星通关主题曲5-9；必须编入非助战娜斯提并上场，且至少使用2次栖脚地",
+      "paramList": [
+        "3",
+        "main_05-09",
+        "skchr_nasti_3",
+        "2",
+        "char_4212_nasti"
+      ],
+      "uniEquipMissionId": "uniequip_002_nasti_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_nasti",
+      "jumpStageId": "main_05-09"
+    }
+  },
+  "moduleData": {
+    "uniequip_002_nasti": {
+      "phases": [
+        {
+          "equipLevel": 1,
+          "parts": [
+            {
+              "resKey": "nasti_equip_1_1_p1",
+              "target": "TRAIT",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {},
+              "overrideTraitDataBundle": {
+                "candidates": [
+                  {
+                    "additionalDescription": "<支援装置>的持有上限<@ba.kw>+{cnt}</>且部署费用<@ba.kw>减少</>",
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "blackboard": {
+                      "cnt": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "attributeBlackboard": {
+            "max_hp": 78,
+            "atk": 26,
+            "def": 25
+          },
+          "tokenAttributeBlackboard": {
+            "token_10059_nasti_nstdef": {
+              "cost": -2,
+              "max_deck_stack_cnt": 1
+            },
+            "token_10060_nasti_nstchr": {
+              "cost": -2,
+              "max_deck_stack_cnt": 1
+            },
+            "token_10061_nasti_nstbld": {
+              "cost": -3,
+              "max_deck_stack_cnt": 1
+            }
+          }
+        },
+        {
+          "equipLevel": 2,
+          "parts": [
+            {
+              "resKey": "nasti_equip_1_2_p1",
+              "target": "TRAIT",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {},
+              "overrideTraitDataBundle": {
+                "candidates": [
+                  {
+                    "additionalDescription": "<支援装置>的持有上限<@ba.kw>+{cnt}</>且部署费用<@ba.kw>减少</>",
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "blackboard": {
+                      "cnt": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "target": "TALENT_DATA_ONLY",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {
+                "candidates": [
+                  {
+                    "displayRangeId": false,
+                    "upgradeDescription": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变，首个装置部署费用减少",
+                    "talentIndex": 0,
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "prefabKey": "#",
+                    "name": "前方施工",
+                    "blackboard": {},
+                    "isHideTalent": false
+                  }
+                ]
+              },
+              "overrideTraitDataBundle": {}
+            },
+            {
+              "resKey": "nasti_equip_1_2_p2",
+              "target": "TALENT",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {
+                "candidates": [
+                  {
+                    "displayRangeId": false,
+                    "upgradeDescription": "",
+                    "talentIndex": 0,
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "prefabKey": "10_root",
+                    "blackboard": {
+                      "value": -3
+                    },
+                    "isHideTalent": true
+                  }
+                ]
+              },
+              "overrideTraitDataBundle": {}
+            }
+          ],
+          "attributeBlackboard": {
+            "max_hp": 102,
+            "atk": 32,
+            "def": 35
+          },
+          "tokenAttributeBlackboard": {
+            "token_10059_nasti_nstdef": {
+              "cost": -2,
+              "max_deck_stack_cnt": 1
+            },
+            "token_10060_nasti_nstchr": {
+              "cost": -2,
+              "max_deck_stack_cnt": 1
+            },
+            "token_10061_nasti_nstbld": {
+              "cost": -3,
+              "max_deck_stack_cnt": 1
+            }
+          }
+        },
+        {
+          "equipLevel": 3,
+          "parts": [
+            {
+              "resKey": "nasti_equip_1_3_p1",
+              "target": "TRAIT",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {},
+              "overrideTraitDataBundle": {
+                "candidates": [
+                  {
+                    "additionalDescription": "<支援装置>的持有上限<@ba.kw>+{cnt}</>且部署费用<@ba.kw>减少</>",
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "blackboard": {
+                      "cnt": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "target": "TALENT_DATA_ONLY",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {
+                "candidates": [
+                  {
+                    "displayRangeId": false,
+                    "upgradeDescription": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变，首个装置部署费用减少；装置可与攻击范围内其他装置共同提供效果",
+                    "talentIndex": 0,
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "prefabKey": "#",
+                    "name": "前方施工",
+                    "blackboard": {},
+                    "isHideTalent": false
+                  }
+                ]
+              },
+              "overrideTraitDataBundle": {}
+            },
+            {
+              "resKey": "nasti_equip_1_3_p2",
+              "target": "TALENT",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {
+                "candidates": [
+                  {
+                    "displayRangeId": false,
+                    "upgradeDescription": "",
+                    "talentIndex": 0,
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "prefabKey": "10_root",
+                    "blackboard": {
+                      "value": -3
+                    },
+                    "isHideTalent": true
+                  }
+                ]
+              },
+              "overrideTraitDataBundle": {}
+            },
+            {
+              "resKey": "nasti_equip_1_3_p3",
+              "target": "TALENT",
+              "isToken": false,
+              "addOrOverrideTalentDataBundle": {
+                "candidates": [
+                  {
+                    "displayRangeId": false,
+                    "upgradeDescription": "",
+                    "talentIndex": -1,
+                    "unlockCondition": {
+                      "phase": "PHASE_2",
+                      "level": 60
+                    },
+                    "requiredPotentialRank": 0,
+                    "prefabKey": "20_root",
+                    "blackboard": {},
+                    "isHideTalent": true
+                  }
+                ]
+              },
+              "overrideTraitDataBundle": {}
+            }
+          ],
+          "attributeBlackboard": {
+            "max_hp": 145,
+            "atk": 40,
+            "def": 45
+          },
+          "tokenAttributeBlackboard": {
+            "token_10059_nasti_nstdef": {
+              "cost": -2,
+              "max_deck_stack_cnt": 1
+            },
+            "token_10060_nasti_nstchr": {
+              "cost": -2,
+              "max_deck_stack_cnt": 1
+            },
+            "token_10061_nasti_nstbld": {
+              "cost": -3,
+              "max_deck_stack_cnt": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  "potentialItem": {
+    "itemId": "p_char_4212_nasti",
+    "name": "娜斯提的信物",
+    "description": "一支树枝造型的骨笔，可以辅助完成一些精密作业。娜斯提说不必因为它叫“骨笔”就有所顾虑，折断了她随时帮你换新的。",
+    "rarity": "TIER_6",
+    "iconId": "p_char_4212_nasti",
+    "sortId": 600122,
+    "usage": "用于提升娜斯提的潜能。",
+    "obtainApproach": "干员入职的馈赠",
+    "hideInItemGet": false,
+    "classifyType": "MATERIAL",
+    "itemType": "MATERIAL",
+    "stageDropList": {},
+    "buildingProductList": {}
+  }
+}
