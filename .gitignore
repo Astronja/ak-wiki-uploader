@@ -1,2 +1,6 @@
 /.env
 /node_modules
+/sources/buffers
+test.js
+temp.js
+.DS_Store

@@ -157,7 +157,6 @@ export async function remove (page_name, reason) {
                 'Sec-Fetch-Site': 'same-origin'
             }
         });
-        console.log(response);
         const result = await response.json();
         return result;
     } catch (err) {
@@ -277,4 +276,4 @@ async function test () {
     */
 }
 
-test();
+//test();

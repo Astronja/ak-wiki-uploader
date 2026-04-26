@@ -4,9 +4,8 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 (async () => {
     const upload = new Upload({
-        operators: ["Ripresa", "Bellone"]
+        operators: ["Botani", "Ukusik", "Zima_the_Raging_Tide"]
     });
     await upload.init();
-    //await delay(1000);
     await upload.upload();
 })();

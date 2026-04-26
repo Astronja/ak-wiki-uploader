@@ -1,9 +1,11 @@
+import source from '../source.js';
+
 export default class template {
     /**
      * Initialization of ~/OPERATOR page.
      * @param {object} data The data regarding the operator
-     * @param {boolean} init True if creating page.
      * @param {string} enname The page name of the operator (usually English).
+     * @returns {string} The final wikitext
      */
     static op_main (data, enname) {
         let wikitextList = [];
@@ -107,6 +109,13 @@ export default class template {
 
         
         //Info box
+        let string1 = "";
+        let string2 = "";
+        for (let archive of data.handbookInfo.storyTextAudio) {
+            if (archive.storyTitle.includes("基础档案")) string1 = archive.stories[0].storyText;
+            if (archive.storyTitle.includes("综合体检测试")) string2 = archive.stories[0].storyText;
+        }
+        const opPartialInfos = parseOperatorInfoText(string1, string2);
         const opinfobox = formatCell({
             name: "Operator infobox",
             content: {
@@ -129,7 +138,7 @@ export default class template {
                  * since this page will be created before opeartor is officially released, this part will be commented out to avoid exceptions
                  * Provided in: INITIAL
                  */
-                image: "<!--\nSnegurochka.png:Base;\nSnegurochka Elite 2.png:Elite 2\n-->",
+                image: annotate(`\n${enname}.png:Base;\n${enname} Elite 2.png:Elite 2\n`),
                 /**
                  * operator's cn name
                  * Provided in: INITIAL
@@ -220,69 +229,70 @@ export default class template {
                  * operator's battling experience, measured in time.
                  * Provided in: RELEASE
                  */
-                experience: "None",
+                experience: opPartialInfos.experience,
                 /**
                  * operator's birthplace
                  * Provided in: RELEASE
                  */
-                birthplace: "Ursus",
+                birthplace: opPartialInfos.origin,
                 /**
                  * operator's birthdate
                  * Provided in: RELEASE
                  */
-                birthdate: "December 1st",
+                birthdate: opPartialInfos.birthday,
                 /**
                  * operator's race
                  * Provided in: RELEASE
                  */
-                race: "[[Liberi]]",
+                race: opPartialInfos.race,
                 /**
                  * operator's physical height
                  * Provided in: RELEASE
                  */
-                height: "170 cm",
+                height: opPartialInfos.height,
                 /**
                  * operator's infection status, if infected: "Confirmed [[Infected]] by medical examination.", "Confirmed Uninfected by medical examination." vice versa
                  * Provided in: RELEASE
                  */
-                infection: "Medical tests have confirmed that no infection is present.",
+                infection: opPartialInfos.infected ? "Originium crystals distributed across skin surface, confirmed Infected by medical examination." : "Medical tests have confirmed that no infection is present.",
                 /**
                  * rated by 8 levels: feeble, flawed, normal, standard, average, outstanding, exceptional
                  * Provided in: RELEASE
                  */
-                strength: "",
+                strength: opPartialInfos.strength,
                 /**
                  * see above
                  * Provided in: RELEASE
                  */
-                mobility: "",
+                mobility: opPartialInfos.mobility,
                 /**
                  * see above
                  * Provided in: RELEASE
                  */
-                endurance: "",
+                endurance: opPartialInfos.endurance,
                 /**
                  * see above
                  * Provided in: RELEASE
                  */
-                tactical: "",
+                tactical: opPartialInfos.tactical,
                 /**
                  * see above
                  * Provided in: RELEASE
                  */
-                skill: "", // see above
+                skill: opPartialInfos.skill, // see above
                 /**
                  * see above
                  * Provided in: RELEASE
                  */
-                originium: ""
+                originium: opPartialInfos.originium,
             }
         });
         wikitextList.push(opinfobox);
 
 
         //Summary
-        const opsummary = "'''Snegurochka''' is a [[4-star|4★]] [[Ursus|Ursine]] [[Agent Vanguard]] [[Operator]] in ''[[Arknights]]'', introduced in [[Abnormal Spectrum]]."
+        //const opsummary = "'''Snegurochka''' is a [[4-star|4★]] [[Ursus|Ursine]] [[Agent Vanguard]] [[Operator]] in ''[[Arknights]]'', introduced in [[Abnormal Spectrum]]."
+        const opsummary = `'''${enname}''' is a [[${data.character.rarity.replace("TIER_", "")}-star|★]] [[${annotate("Manually fill in: Region")}]] [[${annotate("Manually fill in: Class")} ${convertProfessionName(data.character.profession)}]] [[Operator]] in ''[[Arknights]]'', introduced in [[${annotate("Manually fill in: Event")}]]`;
         // const summary = '''{{subst:#titleparts:{{subst:PAGENAME}}}}''' is a [[-star|★]] [[]] [[]] [[Operator]] in ''[[Arknights]]'', introduced in [[]].
         // ⬆️ this is the one provided in the boiler template.
         wikitextList.push(opsummary);
@@ -582,8 +592,9 @@ export default class template {
         wikitextList.push("\n==Talents==");
         for (let talent of data.character.talents) {
             const talentName = talent.candidates[0].name;
+            if (!talentName) continue;
             let itemList = { "PHASE_0": [], "PHASE_1": [], "PHASE_2": [] };
-            for (let item of talent) {
+            for (let item of talent.candidates) {
                 let isExisting = false;
                 for (let phase in itemList) {
                     if (phase == item.unlockCondition.phase) {
@@ -611,7 +622,7 @@ export default class template {
                 }
             }
 
-            
+
             if (moreThanTwoPot) {
                 let count = 1;
                 let talentString = '';
@@ -639,16 +650,19 @@ export default class template {
                         if (count != 1) {
                             talentCell['rpl'] = talentName + " " + (count - 1);
                         }
-                        talentString+=(formatCell(talentCell) + "\n");
+                        talentString+=(formatCell({name: "Talent", content: talentCell}) + "\n");
                         count++;
                     }
                     wikitextList.push(talentString);
                 }
             } else {
                 let talentObject = { name: talentName };
-                if (itemList[key].length == 2) {
+                let maxNum = 0;
+                for (let key in itemList) if (itemList[key].length > maxNum) maxNum = itemList[key].length;
+                if (maxNum == 2) {
                     let count = 1;
                     for (let key in itemList) {
+                        if (itemList[key].length == 0) continue;
                         let cond = '';
                         switch (itemList[key][0].condition) {
                             case "PHASE_0":
@@ -671,6 +685,7 @@ export default class template {
                     let count = 1;
                     for (let key in itemList) {
                         if (itemList[key].length == 0) continue;
+                        let cond = '';
                         switch (itemList[key][0].condition) {
                             case "PHASE_0":
                                 cond = "Base";
@@ -687,7 +702,7 @@ export default class template {
                         count++;
                     }
                 }
-                wikitextList.push(formatCell(talentObject));
+                wikitextList.push(formatCell({name: "Talent", content: talentObject}));
             }
         }
 
@@ -736,35 +751,126 @@ export default class template {
                 moduleObject['title'] = mod.typeIcon.toUpperCase();
                 moduleObject['type'] = mod.typeName2.toLowerCase();
                 moduleObject['module'] = mod.uniEquipName;
+                moduleObject['talent'] = "";
                 for (let phase of modData.phases) {
                     let breaks = false;
                     for (let part of phase.parts) {
                         if (part.target == "TALENT_DATA_ONLY") {
                             moduleObject['trait'] = "new";
+                            const name = part.addOrOverrideTalentDataBundle.candidates[0].name;
+                            moduleObject['talent'] = moduleObject['talent'].replaceAll(`,${name}`, "") + `,${name}`;
                             breaks = true;
                             break;
                         } else moduleObject['trait'] = annotate("");
                     }
                     if (breaks) break;
                 }
+                moduleObject['talent'] = annotate("original" + moduleObject['talent']);
+                for (let phase of modData.phases) {
+                    if (!phase.parts[phase.parts.length-1].overrideTraitDataBundle.candidates) continue;
+                    moduleObject[`effect${phase.equipLevel}`] = phase.parts[phase.parts.length-1].overrideTraitDataBundle.candidates[0].additionalDescription;
+                    var index = 1;
+                    for (let key in phase.attributeBlackboard) {
+                        moduleObject[`att${phase.equipLevel}${index}`] = `${key.replace("max_hp", "hp")},${phase.attributeBlackboard[key]}`;
+                        index++;
+                    }
+                }
+                var index = 1;
+                while (data.moduleMissions[`${modId}${index}`]) {
+                    moduleObject[`mission${index}`] = data.moduleMissions[`${modId}_${index}`].desc;
+                    index++;
+                }
+                moduleObject['level'] = mod.unlockLevel;
+                moduleObject['data block'];
+                var index = 1;
+                for (let index in mod.unlockCost) {
+                    const cost = mod.unlockCost[index];
+                    for (let mat of cost) {
+                        if (mat.id == "mod_unlock_token") moduleObject['data block'] = mat.count;
+                        else if (mat.id == "mod_unlock_token1") moduleObject['data stick'] = mat.count;
+                        else if (mat.id == "mod_unlock_token2") moduleObject['data instrument'] = mat.count;
+                        else if (mat.type == "MATERIAL") moduleObject[`material ${index}`.replaceAll(" 1", "")] = mat.count;
+                        else if (mat.id == "4001") moduleObject[`lmd ${index}`.replaceAll(" 1", "")] = mat.count;
+                    }
+                }
 
+                for (let cost of mod.itemCost["3"]) {
+                    if (cost.id == "mod_unlock_token") moduleObject['data block'] = cost.count;
+                    if (cost.id == "mod_unlock_token1") moduleObject['data block'] = cost.count;
+                    if (cost.id == "mod_unlock_token2") moduleObject['data block'] = cost.count;
+                }
             }
             moduleObject['desc'] = data.charModules[modId].uniEquipDesc;
+            wikitextList.push(formatCell({
+                name: "Operator module",
+                content: moduleObject
+            }));
         }
 
 
         // Base Skills
+        let baseObject = {};
+        var index = 1;
+        for (let bs of data.baseSkills.buffChar) {
+            if (!(bs.buffData.length > 0)) continue;
+            for (var i = 0; i < bs.buffData.length; i++) {
+                baseObject[`id${index}`] = bs.buffData[i].buffId;
+                if (bs.buffData[i].cond.phase != "PHASE_0") baseObject[`cond${index}`] = phaseToElite(bs.buffData[i].cond.phase);
+                index++;
+            }
+        }
+        wikitextList.push(formatCell({
+            name: "Base skills",
+            content: baseObject
+        }));
 
-
-        //return wikitextList.join("\n");
+        return wikitextList.join("\n");
     }
 
 
     /**
-     * @param {string} 
+     * Add-on skins modification of ~/OPERATOR/Gallery page.
+     * @param {object} data The data regarding the operator
+     * @param {string} original The original wikitext of the targeted operator gallery page, for modification use.
+     * @param {string} enname The page name of the operator (usually English).
+     * @returns {string} The final wikitext (composed of original and generated) for the operator gallery section.
      */
     static op_gallery_skin (data, original, enname) {
+        let wikitextList = [];
+        const origList = original.split("==Sprites==");
+        wikitextList.push(origList[0]);
+        const origFirst = origList[0].split("\n");
         
+        let existSkinCount = 0;
+        for (let line of origFirst) {
+            const segments = line.split(" = ");
+            if (segments.length > 1 && segments[0].trim().includes("|no")) if (parseInt(segments[1].trim()) > existSkinCount) existSkinCount = parseInt(segments[1].trim());
+        }
+        if (existSkinCount == 0) wikitextList.push("\n\n==Outfits==");
+        if (!origList[0].includes("{{Translation|section")) wikitextList.push("{{Translation|section}}");
+        /*
+        if (Object.keys(data.charSkins).length > existSkinCount) {
+            for (let skinId in data.charSkins) {
+                
+            }
+        } else throw new Error("No new skins to add.");
+        */
+        const skin = data.charSkins[Object.keys(data.charSkins)[Object.keys(data.charSkins).length - 1]];
+        wikitextList.push(formatCell({
+            name: "Operator skin",
+            content: {
+                no: existSkinCount + 1,
+                name: skin.displaySkin.skinName,
+                use: skin.displaySkin.usage,
+                quote: skin.displaySkin.description,
+                series: skin.displaySkin.skinGroupName,
+                desc: skin.displaySkin.dialog.replace(`${skin.displaySkin.skinGroupName}. `, ""),
+                obtain: annotate("Manually fill in"),
+            }
+        }));
+        wikitextList.push("\n==Sprites==");
+        wikitextList.push(origList[1]);
+        return wikitextList.join("\n");
     }
 
     /**
@@ -807,16 +913,17 @@ export default class template {
     static op_file (data, original, enname) {
         let wikitext = "{{Operator tab}}\n{{Translation|article}}\n";
         let footer = `[[Category: ${enname}]]\n[[Category: Operator files]]\n`;
-        if (original.includes(`[[Category: ${enname}]]`)) footer = footer.replace(`[[Category: ${enname}]]\n`, "");
-        if (original.includes(`[[Category: Operator files]]`)) footer = footer.replace(`[[Category: Operator files]]\n`, "");
-        const originalLines = original.split("\n");
-        let index = 0;
+        //if (original.includes(`[[Category: ${enname}]]`)) footer = footer.replace(`[[Category: ${enname}]]\n`, "");
+        //if (original.includes(`[[Category: Operator files]]`)) footer = footer.replace(`[[Category: Operator files]]\n`, "");
+        //const originalLines = original.split("\n");
+        //let index = 0;
+        /*
         while (index < originalLines.length) {
             if (originalLines[index].startsWith("{{Operator tab}}")) wikitext = wikitext.replace("{{Operator tab}}\n", "");
             if (originalLines[index].startsWith("{{Translation|article}}")) wikitext = wikitext.replace("{{Translation|article}}\n", "");
             if (originalLines[index].startsWith("{{Operator intro")) break;
             index++;
-        }
+        }*/
         const reference = {
             客观履历: "Profile",
             临床诊断分析: "Clinical Analysis",
@@ -841,7 +948,8 @@ export default class template {
                 wikitext += cell;
             }
         }
-        originalLines.splice(index, 0, wikitext);
+        //originalLines.splice(index, 0, wikitext);
+        return wikitext + footer;
         return originalLines.join('\n') + '\n' + footer;
     }
 
@@ -953,7 +1061,7 @@ const skillRecoveryType = (sp) => {
     switch (sp) {
         case "INCREASE_WITH_TIME":
             return "auto";
-        case "INCREASE_WITH_ATTACK":
+        case "INCREASE_WHEN_ATTACK":
             return "attack";
         case "INCREASE_WITH_DAMAGE":
             return "damage";
@@ -973,6 +1081,61 @@ const skillActiveType = (id) => {
         default:
             return annotate("unknown");
     }
+}
+
+const phaseToElite = (string) => {
+    switch (string) {
+        case "PHASE_0":
+            return "Elite 0";
+        case "PHASE_1":
+            return "Elite 1";
+        case "PHASE_2":
+            return "Elite 2";
+        default:
+            return annotate("unknown");
+    }
+}
+
+const physicalExamination = (string) => {
+    const map = {
+        卓越: "Outstanding/Exceptional",
+        优良: "Excellent",
+        标准: "Standard",
+        普通: "Normal/Average",
+        缺陷: "Flawed"
+    }
+    return map[string] || annotate("unknown: " + string);
+}
+
+const parseOperatorInfoText = (string1, string2) => {
+    const lines = string1.split("\n");
+    let obj = {};
+    let scanInfectionStatus = false;
+    for (let line of lines) {
+        if (scanInfectionStatus) {
+            obj['infected'] = !(line.includes("非感染"));
+            scanInfectionStatus = false;
+            continue;
+        }
+        if (line.includes("代号")) obj['codename'] = line.split("】")[1].trim();
+        if (line.includes("性别")) obj['sex'] = line.split("】")[1].trim();
+        if (line.includes("经验")) obj['experience'] = line.split("】")[1].trim();
+        if (line.includes("出身地")) obj['origin'] = line.split("】")[1].trim();
+        if (line.includes("生日")) obj['birthday'] = line.split("】")[1].trim();
+        if (line.includes("种族")) obj['race'] = line.split("】")[1].trim();
+        if (line.includes("身高")) obj['height'] = line.split("】")[1].trim();
+        if (line.includes("矿石病感染情况")) scanInfectionStatus = true;
+    }
+    const lines2 = string2.split("\n");
+    for (let line of lines2) {
+        if (line.includes("物理强度")) obj['strength'] = physicalExamination(line.split("】")[1].trim());
+        if (line.includes("战场机动")) obj['mobility'] = physicalExamination(line.split("】")[1].trim());
+        if (line.includes("生理耐受")) obj['endurance'] = physicalExamination(line.split("】")[1].trim());
+        if (line.includes("战术规划")) obj['tactical'] = physicalExamination(line.split("】")[1].trim());
+        if (line.includes("战斗技巧")) obj['skill'] = physicalExamination(line.split("】")[1].trim());
+        if (line.includes("源石技艺适应性")) obj['originium'] = physicalExamination(line.split("】")[1].trim());
+    }
+    return obj;
 }
 
 const skillDesc = (string) => {
@@ -1057,7 +1220,8 @@ const getRange = (rangeId) => {
 
 //only for test use
 async function test () {
-    template.op_main()
+    const name = "Bellone";
+    await source.writeBuffer(template.op_main(await source.readOperatorFile(name), name));
 }
 
 //test();

@@ -1,6 +1,6 @@
 /**
  * Closure Wiki API Wrapper
- * @version 0.2.1 (Nov 3, 2025)
+ * @version 0.2.2 (Apr 7, 2026)
  * @note The getModuleData method is currently unavailable and returns 404 (as of Nov 3, 2025)
  * @example
  * import closure from './closure-wiki.js';
@@ -168,6 +168,8 @@ export default class closure {
  * @returns {string} The formatted page name that is valid in closure.wiki
  */
 const formatName = (name) => {
+    name = name.replaceAll(" ", "-");
+    name = name.replaceAll("_", "-");
     switch (name) {
         case "Gummy":
             return "gum";

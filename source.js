@@ -31,10 +31,13 @@ export default class source {
     static async readReference (name) {
         return JSON.parse(await fs.readFile("./sources/reference.json", 'utf8'))[name];
     }
+
+    static async writeBuffer (text) {
+        await fs.writeFile("./buffer.txt", (await fs.readFile("./buffer.txt")).toString() + "\n\n" + text, 'utf8');
+    }
 }
 
 /*
 (async () => {
-    await source.writeOperatorFile("Nasti");
-})();
-*/
+    await source.writeOperatorFile("Zima_the_Raging_Tide");
+})();*/
