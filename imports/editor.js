@@ -1,4 +1,5 @@
 import source from '../source.js';
+import fs from 'fs/promises';
 
 const baseUrl = 'https://arknights.wiki.gg/api.php';
 
@@ -69,6 +70,69 @@ export async function edit (data) {
         };
     }
 }
+
+/**
+ * Upload a local file to wiki.
+ * @param {string} path The path of the file to be uploaded.
+ * @param {string} name The presented file name on wiki.
+ * @return {Promise<Object>} The result of the upload.
+ */
+export async function uploadFromLocal (path, name) {
+    try {
+        await login();
+        await delay();
+        const uploadToken = await getToken('csrf');
+        await delay();
+        const fileContent = await fs.readFile(path);
+        const fileName = name.replace("File:", "");
+        const queryParams = new URLSearchParams({
+            action: 'upload',
+            format: 'json'
+        });
+        const formData = new FormData();
+        formData.append('filename', fileName);
+        formData.append('token', uploadToken);
+        formData.append('ignorewarnings', '1');
+        formData.append('file', new Blob([fileContent]), fileName);
+        const response = await fetch(baseUrl + "?" + queryParams, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Cookie': cookies,
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+                'Origin': 'https://arknights.wiki.gg',
+                'Referer': 'https://arknights.wiki.gg/wiki/Special:Upload',
+                'Accept': 'application/json, */*',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'X-Requested-With': 'XMLHttpRequest',
+                'Sec-Fetch-Dest': 'empty',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Site': 'same-origin'
+            }
+        });
+        const result = await response.json();
+        if (result.upload && result.upload.result === 'Success') {
+            console.log(`Upload successful: ${fileName}`);
+            return {
+                success: true,
+                result: result.upload
+            };
+        } else {
+            console.error('Upload failed:', result);
+            return {
+                success: false,
+                error: result.error || result.upload
+            };
+        }
+    } catch (err) {
+        console.error(err);
+        return {
+            success: false,
+            error: err.message
+        };
+    }
+}
+
 
 /**
  * Upload file to wiki.
@@ -256,24 +320,11 @@ async function getToken (type) {
 
 // only for test use
 async function test () {
-    console.log(await edit({
-        page_name: "User:Ptilopsis",
-        wikitext: "Test edit",
-        summary: "Test summary"
-    }));
-
-    /*
-    await edit({
-        page_name: "User:Ptilopsis",
-        wikitext: "Hello World from editor.js v2.",
-        summary: "[Ptilopsis]"
-    });*/
-    /*
-    const response1 = await upload("Ptilopsis_Closure_wiki.png", "https://static.closure.wiki/v1/icon.png");
-    const response2 = await remove("Ptilopsis_Closure_wiki.png", "Deleted for testing reasons");
-    console.log(response1);
-    console.log(response2);
-    */
+    const dir = "./sources/upload-files/";
+    for (let item of await fs.readdir(dir)) {
+        const path = `./sources/upload-files/${item}`;
+        console.log(await uploadFromLocal(path, path.split("/").pop()));
+    }
 }
 
-//test();
+test();

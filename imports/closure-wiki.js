@@ -177,6 +177,12 @@ const formatName = (name) => {
             return "pozyomka";
         case "THRM-EX":
             return "thermal-ex";
+        case "Viy":
+            return "vij";
+        case "Gallus²":
+            return "gallus";
+        case "Kal'tsit---Esperanta":
+            return "kaltsitesperanta";
     }
     const result = slugify(name.replaceAll(" ", ""), { lower: true, strict: true });
     return result;

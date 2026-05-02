@@ -5,39 +5,40 @@ import template from "../utils/template.js";
 
 
 export default class Upload {
-    constructor (task) {
-        this.task = task;
+    constructor (tasks) {
+        this.tasks = tasks;
         this.data = {};
     }
 
     async init () {
         this.data.operators = {};
-        for (let op of this.task.operators) {
-            this.data.operators[op] = await source.readOperatorFile(op);
+        for (let task of this.tasks) {
+            if (this.data.operators[task.page]) continue;
+            if (!(await source.isOperatorFileExist(task.page))) await source.writeOperatorFile(task.page);
+            this.data.operators[task.page] = await source.readOperatorFile(task.page);
         }
     }
     
-    /**
-     * @param {Object} config - The configuration object for the upload process.
-     * @param {boolean} config.upMain - Whether to upload the main page.
-     * @param {boolean} config.upFile - Whether to upload the file page.
-     * @param {boolean} config.upGallery - Whether to upload the gallery page.
-     * @param {boolean} config.upDialogue - Whether to upload the dialogue page.
-     */
-    async upload (config) {
-        for (let op of this.task.operators) {
-            console.log(`Uploading ${op}...`);
-
-            if (config) {
-                if (config.upMain) await this.upOpMain(op);
-                if (config.upFile) await this.upOpFile(op);
-                if (config.upGallery) await this.upOpGallery(op);
-                if (config.upDialogue) await this.upOpDialogue(op);
-            } else {
-                console.log(await this.upOpMain(op));
-                //console.log(await this.upOpFile(op));
-                //console.log(await this.upOpGallery(op));
-                //console.log(await this.upOpDialogue(op));
+    async upload () {
+        for (let task of this.tasks) {
+            switch (task.type) {
+                case 'opmain':
+                    await this.upOpMain(task.page);
+                    break;
+                case 'opfile':
+                    await this.upOpFile(task.page);
+                    break;
+                case 'opgal':
+                    await this.upOpGallery(task.page);
+                    break;
+                case 'opdial':
+                    await this.upOpDialogue(task.page);
+                    break;
+                case 'opgalskin':
+                    await this.uploadOpSkin(task.page);
+                    break;
+                default:
+                    break;
             }
         }
     }
@@ -51,7 +52,7 @@ export default class Upload {
     async uploadOpSkin (name) {
         const data = this.data.operators[name];
         const original = await wiki.getWikiText(`${name}/Gallery`);
-        const wikitext = template.op_gallery_skin(name, data, original);
+        const wikitext = template.op_gallery_skin(data, original, name);
         const editResult = await edit({
             page_name: `${name}/Gallery`,
             wikitext: wikitext,

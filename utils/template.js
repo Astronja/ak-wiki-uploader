@@ -12,7 +12,7 @@ export default class template {
         
 
         //Header and basic information
-        const header = "{{Operator notice|unreleased}}";
+        const header = "{{Spoiler notice|article}}";
         wikitextList.push(header);
         const opinfo = formatCell({
             name: "Operator info",
@@ -22,7 +22,7 @@ export default class template {
                  * (e.g. Snegurochka)
                  * Provided in: INITIAL
                  */
-                name: enname,
+                name: enname.replaceAll("_", " "),
                 //catname: "", // this is probably deprecated
                 /**
                  * operator's profession
@@ -41,7 +41,7 @@ export default class template {
                  * (e.g. Rhodes Island)
                  * Provided in: INITIAL
                  */
-                faction: data.character.nationId,
+                faction: capitalizeFirst(data.character.nationId),
                 /**
                  * operator's rarity
                  * (e.g. 4)
@@ -53,7 +53,7 @@ export default class template {
                  * (e.g. Melee)
                  * Provided in: INITIAL
                  */
-                position: data.character.position,
+                position: capitalizeFirst(data.character.position.toLowerCase()),
                 /**
                  * operator's tags
                  * (e.g. DP-Recovery, Fast-Redeploy)
@@ -73,17 +73,17 @@ export default class template {
                  */
                 headhunting: "",
                 /**
-                 * operator's release event
-                 * (e.g. "Ato")
-                 * Provided in: INITIAL
-                 */
-                event: "",
-                /**
                  * operator's description (do not mix up with trait)
                  * (e.g. "Vanguard Operator Snegurochka treats every data with utmost care.")
                  * Provided in: RELEASE
                  */
                 desc: data.character.itemUsage,
+                /**
+                 * operator's release event
+                 * (e.g. "Ato")
+                 * Provided in: INITIAL
+                 */
+                event: "",
                 /**
                  * opeartor's quote (in game) 
                  * (e.g. "Not every problem in the world has solution, but she tries to look for one.")
@@ -123,7 +123,7 @@ export default class template {
                  * operator's English or romanized name, usually same with the page name
                  * Provided in: INITIAL
                  */
-                name: enname, 
+                name: enname.replaceAll("_", " "), 
                 /**
                  * pronounciation of the name
                  * Provided in: MANUAL
@@ -145,11 +145,6 @@ export default class template {
                  */
                 cnname: data.character.name,
                 /**
-                 * since usually the operator's name is already in English, this is not commonly used
-                 * Provided in: INITIAL
-                 */
-                enname: enname,
-                /**
                  * operator's japanese name
                  * Provided in: MANUAL
                  */
@@ -159,16 +154,6 @@ export default class template {
                  * Provided in: MANUAL
                  */
                 krname: "",
-                /**
-                 * operator realname
-                 * Provided in: MANUAL
-                 */
-                realname: "",
-                /**
-                 * operator's nickname (or alternative one)
-                 * Provided in: MANUAL
-                 */
-                othername: "",
                 /**
                  * operator's EP
                  * Provided in: MANUAL
@@ -180,11 +165,6 @@ export default class template {
                  */
                 basis: "",
                 /**
-                 * operator's name's etymology
-                 * Provided in: MANUAL
-                 */
-                etymology: "",
-                /**
                  * operator's in-game code
                  * Provided in: RELEASE
                  */
@@ -194,12 +174,27 @@ export default class template {
                  * Provided in: RELEASE
                  */
                 fileno: data.character.displayNumber,
-                //appearance: "", // deprecated
                 /**
                  * illustrator of the operator
                  * Provided in: INITIAL
                  */
                 illustrator: data.charSkins[Object.keys(data.charSkins)[0]].displaySkin.drawerList.join(", "),
+                /**
+                 * operator realname
+                 * Provided in: MANUAL
+                 */
+                realname: "",
+                /**
+                 * operator's nickname (or alternative one)
+                 * Provided in: MANUAL
+                 */
+                othername: "",
+                /**
+                 * operator's name's etymology
+                 * Provided in: MANUAL
+                 */
+                etymology: "",
+                //appearance: "", // deprecated
                 /**
                  * operator's Japanese voice
                  * Provided in: INITIAL
@@ -221,10 +216,18 @@ export default class template {
                  */
                 krcv: "",
                 /**
+                 * 
+                 */
+                othercv: "",
+                /**
+                 * 
+                 */
+                otherlang: "",
+                /**
                  * operator's gender
                  * Provided in: INITIAL
                  */
-                gender: "",
+                gender: opPartialInfos.sex,
                 /**
                  * operator's battling experience, measured in time.
                  * Provided in: RELEASE
@@ -249,7 +252,7 @@ export default class template {
                  * operator's physical height
                  * Provided in: RELEASE
                  */
-                height: opPartialInfos.height,
+                height: opPartialInfos['height']?.replace("cm", " cm") || "",
                 /**
                  * operator's infection status, if infected: "Confirmed [[Infected]] by medical examination.", "Confirmed Uninfected by medical examination." vice versa
                  * Provided in: RELEASE
@@ -520,7 +523,7 @@ export default class template {
                     break;
             }
             for (let i = 0; i < data.character.phases[1].evolveCost.length; i++) {
-                elite1[`e1 m${i}`] = `${data.character.phases[1].evolveCost[i].id}, ${data.character.phases[1].evolveCost[i].count}`;
+                elite1[`e1 m${i+1}`] = `${annotate(data.character.phases[1].evolveCost[i].id)}, ${data.character.phases[1].evolveCost[i].count}`;
             }
             for (let key in elite1) statistics[key] = elite1[key];
         }
@@ -570,7 +573,7 @@ export default class template {
                     break;
             }
             for (let i = 0; i < data.character.phases[2].evolveCost.length; i++) {
-                elite2[`e2 m${i}`] = `${data.character.phases[2].evolveCost[i].id}, ${data.character.phases[2].evolveCost[i].count}`;
+                elite2[`e2 m${i+1}`] = `${annotate(data.character.phases[2].evolveCost[i].id)}, ${data.character.phases[2].evolveCost[i].count}`;
             }
             for (let key in elite2) statistics[key] = elite2[key];
         }
@@ -642,14 +645,10 @@ export default class template {
                                 break;
                         }
                         let talentCell = { name: talentName + " " + count };
+                        if (item.potential != 0) talentCell['pot1'] = item.potential + 1;
                         talentCell['cond1'] = cond;
                         talentCell['desc1'] = item.description;
-                        if (item.potential != 0) {
-                            talentCell['pot1'] = item.potential;
-                        }
-                        if (count != 1) {
-                            talentCell['rpl'] = talentName + " " + (count - 1);
-                        }
+                        if (count != 1) talentCell['rpl'] = talentName + " " + (count - 1);
                         talentString+=(formatCell({name: "Talent", content: talentCell}) + "\n");
                         count++;
                     }
@@ -675,10 +674,10 @@ export default class template {
                                 cond = "Elite 2";
                                 break;
                         }
+                        talentObject['pot'] = itemList[key][1].potential + 1;
                         talentObject[`cond${count}`] = cond;
                         talentObject[`desc${count}a`] = itemList[key][0].description;
                         talentObject[`desc${count}b`] = itemList[key][1].description;
-                        talentObject['pot'] = itemList[key][1].potential;
                         count++;
                     }
                 } else {
@@ -709,36 +708,39 @@ export default class template {
 
 
         // Skills
-        wikitextList.push("\n==Skills==");
-        for (let sk of data.character.skills) {
-            const skill = data.charSkills[sk.skillId];
-            wikitextList.push(formatCell({
-                name: "Skill head",
-                content: {
-                    name: skill.levels[0].name,
-                    icon: annotate(skill.skillId),
-                    sp: skillRecoveryType(skill.levels[0].spData.spType),
-                    type: skillActiveType(skill.levels[0].skillType),
-                }
-            }));
-            for (var i = 0; i < skill.levels.length; i++) {
-                const level = skill.levels[i];
-                wikitextList.push(formatCell({
-                    name: "Skill cell",
+        if (Object.keys(data.character.skills).length > 0) {
+            wikitextList.push("\n==Skills==");
+            for (let sk of data.character.skills) {
+                let skillWikitext = '';
+                const skill = data.charSkills[sk.skillId];
+                skillWikitext += formatCell({
+                    name: "Skill head",
                     content: {
-                        level: i+1,
-                        sp: `${level.spData.initSp},${level.spData.spCost}`,
-                        duration: level.duration,
-                        effect: annotate(level.description)
+                        name: skill.levels[0].name,
+                        icon: annotate(skill.skillId),
+                        sp: skillRecoveryType(skill.levels[0].spData.spType),
+                        type: skillActiveType(skill.levels[0].skillType),
                     }
-                }, true));
+                }, true);
+                for (var i = 0; i < skill.levels.length; i++) {
+                    const level = skill.levels[i];
+                    skillWikitext += formatCell({
+                        name: "Skill cell",
+                        content: {
+                            level: i+1,
+                            sp: `${level.spData.initSp},${level.spData.spCost}`,
+                            duration: level.duration,
+                            effect: annotate(level.description)
+                        }
+                    }, true);
+                }
+                skillWikitext += "{{Skill end}}";
+                wikitextList.push(`${skillWikitext}\n`);
             }
-            wikitextList.push("{{Skill end}}");
         }
-        
 
         // Modules
-        wikitextList.push("\n==Modules==");
+        wikitextList.push("\n==Operator Modules==");
         for (let modId in data.charModules) {
             let moduleObject = {};
             const mod = data.charModules[modId];
@@ -800,7 +802,7 @@ export default class template {
                     if (cost.id == "mod_unlock_token2") moduleObject['data block'] = cost.count;
                 }
             }
-            moduleObject['desc'] = data.charModules[modId].uniEquipDesc;
+            moduleObject['desc'] = data.charModules[modId].uniEquipDesc.replaceAll("\n", "<br>");
             wikitextList.push(formatCell({
                 name: "Operator module",
                 content: moduleObject
@@ -809,6 +811,7 @@ export default class template {
 
 
         // Base Skills
+        let baseString = "===Base Skills===\n";
         let baseObject = {};
         var index = 1;
         for (let bs of data.baseSkills.buffChar) {
@@ -819,10 +822,15 @@ export default class template {
                 index++;
             }
         }
-        wikitextList.push(formatCell({
+        baseString += formatCell({
             name: "Base skills",
             content: baseObject
-        }));
+        });
+        wikitextList.push((baseString));
+
+        wikitextList.push("===Changelog===");
+
+        wikitextList.push("{{Operators}}");
 
         return wikitextList.join("\n");
     }
@@ -848,13 +856,6 @@ export default class template {
         }
         if (existSkinCount == 0) wikitextList.push("\n\n==Outfits==");
         if (!origList[0].includes("{{Translation|section")) wikitextList.push("{{Translation|section}}");
-        /*
-        if (Object.keys(data.charSkins).length > existSkinCount) {
-            for (let skinId in data.charSkins) {
-                
-            }
-        } else throw new Error("No new skins to add.");
-        */
         const skin = data.charSkins[Object.keys(data.charSkins)[Object.keys(data.charSkins).length - 1]];
         wikitextList.push(formatCell({
             name: "Operator skin",
@@ -869,7 +870,8 @@ export default class template {
             }
         }));
         wikitextList.push("\n==Sprites==");
-        wikitextList.push(origList[1]);
+        let spriteString = origList[1].replace("</gallery>", `${enname} Skin ${existSkinCount+1}.webm|gif|${enname}'s ''${skin.displaySkin.skinName}''Outfit Sprite\n</gallery>`);
+        wikitextList.push(spriteString);
         return wikitextList.join("\n");
     }
 
@@ -1001,6 +1003,7 @@ const formatCell = (data, inline) => {
             wikitext+=`|${key} = ${data.content[key]}`;
             if (!inline) wikitext+="\n";
         }
+        if (wikitext.endsWith("\n")) wikitext = wikitext.substring(0, wikitext.length - 1);
         return wikitext + "}}\n";
     } else {
         let wikitext = `{{${data[0]}\n`;
@@ -1158,10 +1161,12 @@ const annotate = (content) => {
     return `<!-- ${content} -->`;
 }
 
+const capitalizeFirst = str => str.charAt(0).toUpperCase() + str.slice(1);
+
 const getRange = (rangeId) => {
     const range = {
-        "0-1": "{{Ranges|s}}",
-        "1-1": "{{Ranges|s|r}}",
+        "0-1": "{{Ranges|p|p|s|p|p}}",
+        "1-1": "{{Ranges|p|p|s|r|p|p}}",
         "1-2": "{{Ranges|r|p}}\n{{Ranges|s|r}}\n{{Ranges|r|p}}",
         "1-3": "{{Ranges|p|r}}\n{{Ranges|s|r}}\n{{Ranges|p|r}}",
         "1-4": "{{Ranges|r|r}}\n{{Ranges|s|r}}\n{{Ranges|r|r}}",

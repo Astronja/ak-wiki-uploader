@@ -5,16 +5,13 @@ dotenv.config();
 
 export default class source {
     static env (key) {
-        console.log(`${key}: ${process.env[key]}`);
         return process.env[key];
     }
 
-    static async getTasks () {
-        return JSON.parse(await fs.readFile("./tasks.json", 'utf8'));
-    }
-
-    static async writeTasks (obj) {
-        await fs.writeFile("./tasks.json", JSON.stringify(obj, null, 2), 'utf8');
+    static async isOperatorFileExist (operator) {
+        const dir = await fs.readdir("./sources/buffers/operators/");
+        if (dir.includes(`${operator.replaceAll(" ", "_")}.json`)) return true;
+        return false;
     }
 
     static async writeOperatorFile (operator) {
@@ -35,9 +32,17 @@ export default class source {
     static async writeBuffer (text) {
         await fs.writeFile("./buffer.txt", (await fs.readFile("./buffer.txt")).toString() + "\n\n" + text, 'utf8');
     }
+
+    static async readTasks () {
+        return JSON.parse(await fs.readFile("./sources/tasks.json", 'utf8'));
+    }
+
+    static async writeTasks (obj) {
+        await fs.writeFile("./sources/tasks.json", JSON.stringify(obj, null, 2), 'utf8');
+    }
 }
 
 /*
 (async () => {
-    await source.writeOperatorFile("Zima_the_Raging_Tide");
+    await source.writeOperatorFile("Lemuen");
 })();*/
