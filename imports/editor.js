@@ -319,12 +319,3 @@ async function getToken (type) {
 }
 
 // only for test use
-async function test () {
-    const dir = "./sources/upload-files/";
-    for (let item of await fs.readdir(dir)) {
-        const path = `./sources/upload-files/${item}`;
-        console.log(await uploadFromLocal(path, path.split("/").pop()));
-    }
-}
-
-test();

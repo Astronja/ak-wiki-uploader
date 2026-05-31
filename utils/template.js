@@ -199,12 +199,12 @@ export default class template {
                  * operator's Japanese voice
                  * Provided in: INITIAL
                  */
-                jpcv: data.voiceLangDict.dict.JP.cvName.join(""),
+                jpcv: data.voiceLangDict.dict?.JP?.cvName?.join("") || "",
                 /**
                  * operator's Mandarin voice
                  * Provided in: INITIAL
                  */
-                cncv: data.voiceLangDict.dict.CN_MANDARIN.cvName.join(""),
+                cncv: data.voiceLangDict.dict?.CN_MANDARIN?.cvName?.join("") || "",
                 /**
                  * operator's English voice
                  * Provided in: MANUAL
