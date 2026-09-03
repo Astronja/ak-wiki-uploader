@@ -41,7 +41,7 @@ export default class template {
                  * (e.g. Rhodes Island)
                  * Provided in: INITIAL
                  */
-                faction: capitalizeFirst(data.character.nationId),
+                faction: capitalizeFirst(data.character.nationId) || capitalizeFirst(data.character.teamId),
                 /**
                  * operator's rarity
                  * (e.g. 4)
@@ -486,6 +486,7 @@ export default class template {
             }
             //Talents
             for (let talent of data.character.talents) {
+                if (!talent.candidates) continue;
                 for (let i = 0; i < talent.candidates.length; i++) {
                     if (talent.candidates[i].unlockCondition.phase == "PHASE_1" && talent.candidates[i].requiredPotentialRank == 0) {
                         if (i == 0) {
@@ -538,6 +539,7 @@ export default class template {
             }
             //Talents
             for (let talent of data.character.talents) {
+                if (!talent.candidates) continue;
                 for (let i = 0; i < talent.candidates.length; i++) {
                     if (talent.candidates[i].unlockCondition.phase == "PHASE_2" && talent.candidates[i].requiredPotentialRank == 0) {
                         if (i == 0) {
@@ -594,6 +596,7 @@ export default class template {
         // Talents
         wikitextList.push("\n==Talents==");
         for (let talent of data.character.talents) {
+            if (!talent.candidates) continue;
             const talentName = talent.candidates[0].name;
             if (!talentName) continue;
             let itemList = { "PHASE_0": [], "PHASE_1": [], "PHASE_2": [] };
@@ -1152,7 +1155,7 @@ const annotate = (content) => {
     return `<!-- ${content} -->`;
 }
 
-const capitalizeFirst = str => str.charAt(0).toUpperCase() + str.slice(1);
+const capitalizeFirst = str => str?.charAt(0)?.toUpperCase() + str?.slice(1);
 
 const getRange = (rangeId) => {
     const range = {
