@@ -1,22 +1,82 @@
 [
-    {
-        "type": "opmain",
-        "page": "Rhodes Island Recon"
-    },
-    {
-        "type": "opgalskin",
-        "page": "Popukar"
-    },
-    {
-        "type": "opgalskin",
-        "page": "Vendela"
-    },
-    {
-        "type": "opgalskin",
-        "page": "Vulpisfoglia"
-    },
-    {
-        "type": "opgalskin",
-        "page": "Rhodes Island Recon"
-    }
+  {
+    "type": "opmain",
+    "page": "Makoto_Yuki"
+  },
+  {
+    "type": "opfile",
+    "page": "Makoto_Yuki"
+  },
+  {
+    "type": "opgal",
+    "page": "Makoto_Yuki"
+  },
+  {
+    "type": "opdial",
+    "page": "Makoto_Yuki"
+  },
+  {
+    "type": "opmain",
+    "page": "Aegis"
+  },
+  {
+    "type": "opfile",
+    "page": "Aegis"
+  },
+  {
+    "type": "opgal",
+    "page": "Aegis"
+  },
+  {
+    "type": "opdial",
+    "page": "Aegis"
+  },
+  {
+    "type": "opmain",
+    "page": "Yukari_Takeba"
+  },
+  {
+    "type": "opfile",
+    "page": "Yukari_Takeba"
+  },
+  {
+    "type": "opgal",
+    "page": "Yukari_Takeba"
+  },
+  {
+    "type": "opdial",
+    "page": "Yukari_Takeba"
+  },
+  {
+    "type": "opmain",
+    "page": "Koromaru"
+  },
+  {
+    "type": "opfile",
+    "page": "Koromaru"
+  },
+  {
+    "type": "opgal",
+    "page": "Koromaru"
+  },
+  {
+    "type": "opdial",
+    "page": "Koromaru"
+  },
+  {
+    "type": "opgalskin",
+    "page": "Makoto_Yuki"
+  },
+  {
+    "type": "opgalskin",
+    "page": "Aegis"
+  },
+  {
+    "type": "opgalskin",
+    "page": "Yukari_Takeba"
+  },
+  {
+    "type": "opgalskin",
+    "page": "Koromaru"
+  }
 ]

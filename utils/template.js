@@ -915,17 +915,8 @@ export default class template {
     static op_file (data, original, enname) {
         let wikitext = "{{Operator tab}}\n{{Translation|article}}\n";
         let footer = `[[Category: ${enname}]]\n[[Category: Operator files]]\n`;
-        //if (original.includes(`[[Category: ${enname}]]`)) footer = footer.replace(`[[Category: ${enname}]]\n`, "");
-        //if (original.includes(`[[Category: Operator files]]`)) footer = footer.replace(`[[Category: Operator files]]\n`, "");
-        //const originalLines = original.split("\n");
-        //let index = 0;
-        /*
-        while (index < originalLines.length) {
-            if (originalLines[index].startsWith("{{Operator tab}}")) wikitext = wikitext.replace("{{Operator tab}}\n", "");
-            if (originalLines[index].startsWith("{{Translation|article}}")) wikitext = wikitext.replace("{{Translation|article}}\n", "");
-            if (originalLines[index].startsWith("{{Operator intro")) break;
-            index++;
-        }*/
+        original = original.replace("{{Operator tab}}\n", "").replace("{{Translation|article}}\n", "");
+        footer = `${original}\n${footer}`;
         const reference = {
             客观履历: "Profile",
             临床诊断分析: "Clinical Analysis",
