@@ -1,79 +1,63 @@
 [
   {
     "type": "opmain",
-    "page": "Makoto_Yuki"
+    "page": "Homebound"
   },
   {
     "type": "opfile",
-    "page": "Makoto_Yuki"
+    "page": "Homebound"
   },
   {
     "type": "opgal",
-    "page": "Makoto_Yuki"
+    "page": "Homebound"
   },
   {
     "type": "opdial",
-    "page": "Makoto_Yuki"
+    "page": "Homebound"
   },
   {
     "type": "opmain",
-    "page": "Aegis"
+    "page": "De_Toledo"
   },
   {
     "type": "opfile",
-    "page": "Aegis"
+    "page": "De_Toledo"
   },
   {
     "type": "opgal",
-    "page": "Aegis"
+    "page": "De_Toledo"
   },
   {
     "type": "opdial",
-    "page": "Aegis"
+    "page": "De_Toledo"
   },
   {
     "type": "opmain",
-    "page": "Yukari_Takeba"
+    "page": "Clementia"
   },
   {
     "type": "opfile",
-    "page": "Yukari_Takeba"
+    "page": "Clementia"
   },
   {
     "type": "opgal",
-    "page": "Yukari_Takeba"
+    "page": "Clementia"
   },
   {
     "type": "opdial",
-    "page": "Yukari_Takeba"
-  },
-  {
-    "type": "opmain",
-    "page": "Koromaru"
-  },
-  {
-    "type": "opfile",
-    "page": "Koromaru"
-  },
-  {
-    "type": "opgal",
-    "page": "Koromaru"
-  },
-  {
-    "type": "opdial",
-    "page": "Koromaru"
+    "page": "Clementia"
   },
   {
     "type": "opgalskin",
-    "page": "Makoto_Yuki"
+    "page": "Leto"
   },
   {
     "type": "opgalskin",
-    "page": "Aegis"
+    "page": "Mantra"
   },
   {
     "type": "opgalskin",
-    "page": "Yukari_Takeba"
+    "page": "Tragodia"
   },
   {
     "type": "opgalskin",

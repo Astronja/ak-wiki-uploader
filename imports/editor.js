@@ -3,6 +3,9 @@ import fs from 'fs/promises';
 
 const baseUrl = 'https://arknights.wiki.gg/api.php';
 
+// Honest bot UA: browser-mimicking headers get challenged by Cloudflare (403 HTML page).
+const USER_AGENT = 'Ptilopsis/1.0 (bot on arknights.wiki.gg; Node.js)';
+
 let cookies = '';
 
 const delay = () => new Promise(resolve => setTimeout(resolve, 1000));
@@ -37,15 +40,7 @@ export async function edit (data) {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Cookie': cookies,
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-                'Origin': 'https://arknights.wiki.gg',
-                'Referer': `https://arknights.wiki.gg/wiki/${encodeURIComponent(data.page_name)}`,
-                'Accept': 'application/json, */*',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'X-Requested-With': 'XMLHttpRequest',
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-origin'
+                'User-Agent': USER_AGENT
             }
         });
         const result = await response.json();
@@ -99,15 +94,7 @@ export async function uploadFromLocal (path, name) {
             body: formData,
             headers: {
                 'Cookie': cookies,
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-                'Origin': 'https://arknights.wiki.gg',
-                'Referer': 'https://arknights.wiki.gg/wiki/Special:Upload',
-                'Accept': 'application/json, */*',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'X-Requested-With': 'XMLHttpRequest',
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-origin'
+                'User-Agent': USER_AGENT
             }
         });
         const result = await response.json();
@@ -162,15 +149,7 @@ export async function upload (file_name, file_url) {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Cookie': cookies,
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-                'Origin': 'https://arknights.wiki.gg',
-                'Referer': 'https://arknights.wiki.gg/wiki/Special:Upload',
-                'Accept': 'application/json, */*',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'X-Requested-With': 'XMLHttpRequest',
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-origin'
+                'User-Agent': USER_AGENT
             }
         });
         const result = await response.json();
@@ -210,15 +189,7 @@ export async function remove (page_name, reason) {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Cookie': cookies,
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-                'Origin': 'https://arknights.wiki.gg',
-                'Referer': 'https://arknights.wiki.gg/wiki/Special:Upload',
-                'Accept': 'application/json, */*',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'X-Requested-With': 'XMLHttpRequest',
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-origin'
+                'User-Agent': USER_AGENT
             }
         });
         const result = await response.json();
@@ -244,21 +215,7 @@ async function login () {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Cookie': cookies,
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-            'Origin': 'https://arknights.wiki.gg',
-            'Referer': 'https://arknights.wiki.gg/w/index.php?title=Special:UserLogin',
-            'Accept': 'application/json, text/javascript, */*; q=0.01',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
-            'Connection': 'keep-alive',
-            'X-Requested-With': 'XMLHttpRequest',
-            'Sec-Fetch-Dest': 'empty',
-            'Sec-Fetch-Mode': 'cors',
-            'Sec-Fetch-Site': 'same-origin',
-            'Sec-Fetch-User': '?1',
-            'Pragma': 'no-cache',
-            'Cache-Control': 'no-cache',
-            'TE': 'trailers'
+            'User-Agent': USER_AGENT
         }
     });
     const ck = lgResponse.headers.getSetCookie();
@@ -279,12 +236,7 @@ async function setCookies () {
         method: 'POST',
         body: lgParams,
         headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',    
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Connection': 'keep-alive',
-            'Cache-Control': 'max-age=0'
+            'User-Agent': USER_AGENT
         }
     });
     const ck = getResponse.headers.getSetCookie();
@@ -310,7 +262,7 @@ async function getToken (type) {
     const response = await fetch(tokenUrl, {
         headers: {
             'Cookie': cookies,
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+            'User-Agent': USER_AGENT
         }
     });
     const result = await response.json();
